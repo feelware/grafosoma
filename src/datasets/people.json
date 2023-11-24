@@ -1,2304 +1,2675 @@
 [
-  {
-    "id": 1,
-    "name": "John Doe",
-    "age": 30,
-    "physical_traits": {
-      "physique": "Athletic",
-      "hair": "Brown",
-      "skin": "Fair",
-      "eye_color": "Blue"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 30,
+      "physical_traits": {
+        "physique": "Athletic",
+        "hair": "Brown",
+        "skin": "Fair",
+        "eye_color": "Blue"
       },
-      {
-        "name": "Spanish",
-        "fluency_level": "Intermediate"
-      },
-      {
-        "name": "French",
-        "fluency_level": "Basic"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Science",
-      "major": "Computer Science",
-      "graduation_year": 2015,
-      "university": "University of XYZ"
-    },
-    "hobbies": [
-      "Playing Guitar",
-      "Running"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Italian",
-        "Sushi"
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Spanish",
+          "fluency_level": "Intermediate"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Basic"
+        }
       ],
-      "music": {
-        "genre": [
-          "Rock",
-          "Classical",
-          "Pop",
-          "Jazz",
-          "Rap"
-        ]
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Computer Science",
+        "graduation_year": 2015,
+        "university": "University of XYZ"
       },
-      "movies": {
-        "genre": [
-          "Action",
-          "Sci-Fi",
-          "Drama",
-          "Romance"
-        ]
+      "hobbies": [
+        "Playing Guitar",
+        "Running"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Italian",
+          "Sushi"
+        ],
+        "music": {
+          "genre": [
+            "Rock",
+            "Classical",
+            "Pop",
+            "Jazz",
+            "Rap"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Sci-Fi",
+            "Drama",
+            "Romance"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Mystery",
+            "Science Fiction",
+            "Biography"
+          ]
+        }
       },
-      "books": {
-        "genre": [
-          "Mystery",
-          "Science Fiction",
-          "Biography"
-        ]
-      }
-    }
-  },
-  {
-    "id": 2,
-    "name": "Jane Smith",
-    "age": 28,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Blonde",
-      "skin": "Tan",
-      "eye_color": "Green"
+      "purchases": [
+        {
+          "product_name": "Guitar",
+          "product_type": "Musical Instrument",
+          "price": 500
+        },
+        {
+          "product_name": "Running Shoes",
+          "product_type": "Sportswear",
+          "price": 120
+        }
+      ]
     },
-    "languages": [
-      {
-        "name": "French",
-        "fluency_level": "Fluent"
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 28,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Blonde",
+        "skin": "Tan",
+        "eye_color": "Green"
       },
-      {
-        "name": "German",
-        "fluency_level": "Intermediate"
+      "languages": [
+        {
+          "name": "French",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "German",
+          "fluency_level": "Intermediate"
+        },
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Arts",
+        "major": "Graphic Design",
+        "graduation_year": 2016,
+        "university": "Art Institute"
       },
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Arts",
-      "major": "Graphic Design",
-      "graduation_year": 2016,
-      "university": "Art Institute"
+      "projects": [
+        {
+          "type": "Graphic Design",
+          "name": "Website Redesign",
+          "software_used": [
+            "Adobe Photoshop",
+            "Adobe Illustrator"
+          ]
+        },
+        {
+          "type": "Photography",
+          "name": "Nature Photography",
+          "equipment_used": [
+            "Nikon D750"
+          ]
+        }
+      ],
+      "hobbies": [
+        "Painting",
+        "Traveling"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "purchases": [
+        {
+          "product_name": "Canvas",
+          "product_type": "Art Supplies",
+          "price": 30
+        },
+        {
+          "product_name": "Travel Backpack",
+          "product_type": "Travel Gear",
+          "price": 150
+        }
+      ]
     },
-    "projects": [
-      {
-        "type": "Graphic Design",
-        "name": "Website Redesign",
+    {
+      "id": 3,
+      "name": "David Brown",
+      "age": 35,
+      "physical_traits": {
+        "physique": "Muscular",
+        "hair": "Black",
+        "skin": "Dark",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Spanish",
+          "fluency_level": "Beginner"
+        }
+      ],
+      "education": {
+        "degree": "Master of Business Administration",
+        "major": "Finance",
+        "graduation_year": 2014,
+        "university": "Business School XYZ"
+      },
+      "projects": {
+        "type": "Finance",
+        "name": "Financial Analysis Report",
+        "software_used": [
+          "Microsoft Excel"
+        ]
+      },
+      "hobbies": [
+        "Golf",
+        "Cooking"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Steak",
+          "Indian"
+        ],
+        "music": {
+          "genre": [
+            "Classical",
+            "Country",
+            "Pop"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Thriller"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Self-Help",
+            "Finance"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Golf Clubs Set",
+          "product_type": "Sporting Goods",
+          "price": 800
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Emily Green",
+      "age": 27,
+      "physical_traits": {
+        "physique": "Average",
+        "hair": "Red",
+        "skin": "Pale",
+        "eye_color": "Hazel"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Mandarin",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Arts",
+        "major": "Linguistics",
+        "graduation_year": 2018,
+        "university": "Language Institute"
+      },
+      "hobbies": [
+        "Reading",
+        "Hiking"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Thai",
+          "Mexican"
+        ],
+        "music": {
+          "genre": [
+            "Indie",
+            "Electronic",
+            "Pop"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Fantasy",
+            "Adventure"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Science",
+            "Fantasy"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Linguistics Books Collection",
+          "product_type": "Books",
+          "price": 200
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Michael White",
+      "age": 32,
+      "physical_traits": {
+        "physique": "Stocky",
+        "hair": "Brown",
+        "skin": "Light",
+        "eye_color": "Grey"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Japanese",
+          "fluency_level": "Beginner"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Engineering",
+        "graduation_year": 2013,
+        "university": "Engineering School XYZ"
+      },
+      "projects": [
+        {
+          "type": "Engineering",
+          "name": "Structural Analysis",
+          "software_used": [
+            {
+              "software_name": "AutoCAD",
+              "role": "Design",
+              "libraries_used": [
+                "AutoCAD Architecture",
+                "ANSYS"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Construction",
+          "name": "Building Design",
+          "tools_used": [
+            "SketchUp",
+            "Revit"
+          ]
+        }
+      ],
+      "hobbies": [
+        "Playing Chess",
+        "Skiing"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Mexican",
+          "Chinese"
+        ],
+        "music": {
+          "genre": [
+            "Electronic",
+            "Rock",
+            "Classical",
+            "Jazz",
+            "Hip-Hop"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Science Fiction",
+            "Comedy"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Technology",
+            "Mystery"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Chess Set",
+          "product_type": "Board Games",
+          "price": 50
+        },
+        {
+          "product_name": "Skiing Gear",
+          "product_type": "Sports Equipment",
+          "price": 400
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sophia Lee",
+      "age": 26,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Black",
+        "skin": "Fair",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Korean",
+          "fluency_level": "Native"
+        },
+        {
+          "name": "Spanish",
+          "fluency_level": "Basic"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Arts",
+        "major": "History",
+        "graduation_year": 2017,
+        "university": "University of ABC"
+      },
+      "projects": {
+        "type": "Historical Research",
+        "name": "Ancient Civilizations",
+        "software_used": [
+          "Microsoft Word"
+        ]
+      },
+      "hobbies": [
+        "Traveling",
+        "Cooking"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Italian",
+          "Korean"
+        ],
+        "music": {
+          "genre": [
+            "Pop",
+            "Classical",
+            "Jazz"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Documentary"
+          ]
+        },
+        "books": {
+          "genre": [
+            "History",
+            "Biography"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "History Books Bundle",
+          "product_type": "Books",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "William Johnson",
+      "age": 33,
+      "physical_traits": {
+        "physique": "Athletic",
+        "hair": "Blonde",
+        "skin": "Fair",
+        "eye_color": "Blue"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        }
+      ],
+      "education": {
+        "degree": "Master of Business Administration",
+        "major": "Finance",
+        "graduation_year": 2012,
+        "university": "Business School XYZ"
+      },
+      "projects": {
+        "type": "Finance",
+        "name": "Investment Analysis",
+        "software_used": [
+          "Excel",
+          "Bloomberg Terminal"
+        ]
+      },
+      "hobbies": [
+        "Soccer",
+        "Reading"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Steak",
+          "Indian",
+          "Japanese"
+        ],
+        "music": {
+          "genre": [
+            "Classical",
+            "Rock",
+            "Hip-Hop"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Thriller",
+            "Comedy"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Finance",
+            "Mystery",
+            "Biography"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Soccer Ball",
+          "product_type": "Sports Equipment",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Olivia Adams",
+      "age": 29,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Red",
+        "skin": "Fair",
+        "eye_color": "Hazel"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Intermediate"
+        },
+        {
+          "name": "Spanish",
+          "fluency_level": "Basic"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Biology",
+        "graduation_year": 2014,
+        "university": "Science University"
+      },
+      "projects": {
+        "type": "Biology",
+        "name": "Genetic Research",
+        "software_used": [
+          "Python",
+          "R"
+        ]
+      },
+      "hobbies": [
+        "Hiking",
+        "Gardening"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Italian",
+          "Sushi"
+        ],
+        "music": {
+          "genre": [
+            "Indie",
+            "Classical",
+            "Jazz"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Romance"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Science",
+            "Mystery"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Biology Lab Equipment",
+          "product_type": "Science Equipment",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Ethan Clark",
+      "age": 31,
+      "physical_traits": {
+        "physique": "Muscular",
+        "hair": "Brown",
+        "skin": "Tan",
+        "eye_color": "Green"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "German",
+          "fluency_level": "Intermediate"
+        },
+        {
+          "name": "Russian",
+          "fluency_level": "Basic"
+        }
+      ],
+      "education": {
+        "degree": "Master of Business Administration",
+        "major": "Marketing",
+        "graduation_year": 2013,
+        "university": "Business School XYZ"
+      },
+      "projects": {
+        "type": "Marketing",
+        "name": "Product Launch",
         "software_used": [
           "Adobe Photoshop",
-          "Adobe Illustrator"
+          "Google Ads"
         ]
       },
-      {
-        "type": "Photography",
-        "name": "Nature Photography",
-        "equipment_used": [
-          "Nikon D750"
+      "hobbies": [
+        "Soccer",
+        "Traveling"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Steak",
+          "Italian"
+        ],
+        "music": {
+          "genre": [
+            "Pop",
+            "Rock",
+            "Country"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Comedy"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Biography",
+            "Self-Help"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Marketing Books Set",
+          "product_type": "Books",
+          "price": 180
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Ava Martinez",
+      "age": 25,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Black",
+        "skin": "Dark",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Arts",
+        "major": "Sociology",
+        "graduation_year": 2017,
+        "university": "Social Sciences Institute"
+      },
+      "projects": {
+        "type": "Sociology Research",
+        "name": "Cultural Study",
+        "software_used": [
+          "SPSS",
+          "Qualtrics"
         ]
-      }
-    ],
-    "hobbies": [
-      "Painting",
-      "Traveling"
-    ],
-    "pronouns": [
-      "she",
-      "her"
+      },
+      "hobbies": [
+        "Photography",
+        "Dancing"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Mexican",
+          "Japanese"
+        ],
+        "music": {
+          "genre": [
+            "Pop",
+            "Reggaeton"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Documentary"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Sociology",
+            "Romantic Novel"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Sociology Research Materials",
+          "product_type": "Research Equipment",
+          "price": 250
+        },
+        {
+          "product_name": "Dance Classes Subscription",
+          "product_type": "Entertainment",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Liam Wilson",
+      "age": 29,
+      "physical_traits": {
+        "physique": "Average",
+        "hair": "Blonde",
+        "skin": "Fair",
+        "eye_color": "Blue"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Computer Science",
+        "graduation_year": 2014,
+        "university": "University of XYZ"
+      },
+      "projects": [
+        {
+          "type": "Computer Science",
+          "name": "Software Development",
+          "software_used": [
+            "Java",
+            "Python"
+          ]
+        },
+        {
+          "type": "Computer Science",
+          "name": "Web Development",
+          "software_used": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ]
+        }
+      ],
+      "purchases": [
+        {
+          "product_name": "Computer Science Books Collection",
+          "product_type": "Books",
+          "price": 220
+        },
+        {
+          "product_name": "Web Development Course",
+          "product_type": "Online Course",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Grace Turner",
+      "age": 27,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Blonde",
+        "skin": "Fair",
+        "eye_color": "Green"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Arts",
+        "major": "Graphic Design",
+        "graduation_year": 2016,
+        "university": "Art Institute"
+      },
+      "projects": {
+        "type": "Graphic Design",
+        "name": "Logo Design",
+        "software_used": [
+          "Adobe Illustrator",
+          "InDesign"
+        ]
+      },
+      "hobbies": [
+        "Painting",
+        "Traveling"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Italian",
+          "Sushi"
+        ],
+        "music": {
+          "genre": [
+            "Pop",
+            "Electronic"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Documentary"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Art Prints",
+          "product_type": "Artwork",
+          "price": 80
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Elijah Martinez",
+      "age": 29,
+      "physical_traits": {
+        "physique": "Muscular",
+        "hair": "Black",
+        "skin": "Dark",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Physics",
+        "graduation_year": 2015,
+        "university": "Science University"
+      },
+      "hobbies": [
+        "Hiking",
+        "Astronomy"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Mexican",
+          "Italian",
+          "Mediterranean"
+        ],
+        "music": {
+          "genre": [
+            "Classical",
+            "Rock",
+            "Electronic",
+            "Pop"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Sci-Fi",
+            "Adventure",
+            "Fantasy"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Telescope",
+          "product_type": "Astronomy Equipment",
+          "price": 600
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Aria Lopez",
+      "age": 24,
+      "physical_traits": {
+        "physique": "Average",
+        "hair": "Brown",
+        "skin": "Fair",
+        "eye_color": "Blue"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Spanish",
+          "fluency_level": "Intermediate"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Basic"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Arts",
+        "major": "Political Science",
+        "graduation_year": 2017,
+        "university": "Political Studies Institute"
+      },
+      "projects": {
+        "type": "Political Research",
+        "name": "Election Analysis",
+        "software_used": [
+          "Excel",
+          "SPSS"
+        ]
+      },
+      "hobbies": [
+        "Traveling",
+        "Gardening"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Italian",
+          "Sushi",
+          "Indian"
+        ],
+        "music": {
+          "genre": [
+            "Pop",
+            "Classical",
+            "Jazz",
+            "Hip-Hop"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Documentary"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Gardening Tools Set",
+          "product_type": "Gardening Supplies",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Jackson Turner",
+      "age": 33,
+      "physical_traits": {
+        "physique": "Athletic",
+        "hair": "Black",
+        "skin": "Tan",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Spanish",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Master of Business Administration",
+        "major": "Marketing",
+        "graduation_year": 2012,
+        "university": "Business School XYZ"
+      },
+      "hobbies": [
+        "Soccer",
+        "Hiking"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Steak",
+          "Indian",
+          "Mexican"
+        ],
+        "music": {
+          "genre": [
+            "Classical",
+            "Rock",
+            "Hip-Hop",
+            "Country"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Thriller",
+            "Comedy"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Finance",
+            "Mystery",
+            "Biography"
+          ]
+        }
+      },
+      "purchases": [
+        {
+          "product_name": "Soccer Jersey",
+          "product_type": "Sports Apparel",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Scarlett Adams",
+      "age": 28,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Blonde",
+        "skin": "Fair",
+        "eye_color": "Green"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Intermediate"
+        },
+        {
+          "name": "German",
+          "fluency_level": "Basic"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Chemistry",
+        "graduation_year": 2015,
+        "university": "Science University"
+      },
+      "projects": [
+        {
+          "type": "Chemistry Research",
+          "name": "Organic Synthesis",
+          "software_used": [
+            "ChemDraw",
+            "Spectroscopy Software"
+          ]
+        }
+      ],
+      "hobbies": [
+        "Hiking",
+        "Cooking"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Italian",
+          "Sushi",
+          "Mexican"
+        ],
+        "music": {
+          "genre": [
+            "Pop",
+            "Jazz",
+            "Rock",
+            "Classical",
+            "Indie"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Romance",
+            "Drama"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Science",
+            "Mystery"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Chemistry Lab Kit",
+            "product_type": "Laboratory Equipment"
+        },
+        {
+            "product_name": "Hiking Backpack",
+            "product_type": "Outdoor Gear"
+        }
     ]
-  },
-  {
-    "id": 3,
-    "name": "David Brown",
-    "age": 35,
-    "physical_traits": {
-      "physique": "Muscular",
-      "hair": "Black",
-      "skin": "Dark",
-      "eye_color": "Brown"
     },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
+    {
+      "id": 17,
+      "name": "Ana Soto",
+      "age": 28,
+      "physical_traits": {
+        "physique": "Delgado",
+        "hair": "Rubio",
+        "skin": "Blanca",
+        "eye_color": "Verde"
       },
-      {
-        "name": "Spanish",
-        "fluency_level": "Beginner"
-      }
-    ],
-    "education": {
-      "degree": "Master of Business Administration",
-      "major": "Finance",
-      "graduation_year": 2014,
-      "university": "Business School XYZ"
-    },
-    "projects": {
-      "type": "Finance",
-      "name": "Financial Analysis Report",
-      "software_used": [
-        "Microsoft Excel"
-      ]
-    },
-    "hobbies": [
-      "Golf",
-      "Cooking"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Steak",
-        "Indian"
+      "languages": [
+        {
+          "name": "Español",
+          "fluency_level": "Fluido"
+        },
+        {
+          "name": "Francés",
+          "fluency_level": "Intermedio"
+        }
       ],
-      "music": {
-        "genre": [
-          "Classical",
-          "Country",
-          "Pop"
-        ]
+      "education": {
+        "degree": "Licenciatura en Artes",
+        "major": "Diseño Gráfico",
+        "graduation_year": 2017,
+        "university": "Universidad XYZ"
       },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Thriller"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Self-Help",
-          "Finance"
-        ]
-      }
-    }
-  },
-  {
-    "id": 4,
-    "name": "Emily Green",
-    "age": 27,
-    "physical_traits": {
-      "physique": "Average",
-      "hair": "Red",
-      "skin": "Pale",
-      "eye_color": "Hazel"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Mandarin",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Arts",
-      "major": "Linguistics",
-      "graduation_year": 2018,
-      "university": "Language Institute"
-    },
-    "hobbies": [
-      "Reading",
-      "Hiking"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Thai",
-        "Mexican"
+      "hobbies": [
+        "Pintura",
+        "Ciclismo"
       ],
-      "music": {
-        "genre": [
-          "Indie",
-          "Electronic",
-          "Pop"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Fantasy",
-          "Adventure"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Science",
-          "Fantasy"
-        ]
-      }
-    }
-  },
-  {
-    "id": 5,
-    "name": "Michael White",
-    "age": 32,
-    "physical_traits": {
-      "physique": "Stocky",
-      "hair": "Brown",
-      "skin": "Light",
-      "eye_color": "Grey"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Japanese",
-        "fluency_level": "Beginner"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Science",
-      "major": "Engineering",
-      "graduation_year": 2013,
-      "university": "Engineering School XYZ"
-    },
-    "projects": [
-      {
-        "type": "Engineering",
-        "name": "Structural Analysis",
-        "software_used": [
-          {
-            "software_name": "AutoCAD",
-            "role": "Design",
-            "libraries_used": [
-              "AutoCAD Architecture",
-              "ANSYS"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "Construction",
-        "name": "Building Design",
-        "tools_used": [
-          "SketchUp",
-          "Revit"
-        ]
-      }
-    ],
-    "hobbies": [
-      "Playing Chess",
-      "Skiing"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Mexican",
-        "Chinese"
+      "pronouns": [
+        "ella",
+        "la"
       ],
-      "music": {
-        "genre": [
-          "Electronic",
-          "Rock",
-          "Classical",
-          "Jazz",
-          "Hip-Hop"
-        ]
+      "preferences": {
+        "food": [
+          "Italiana",
+          "Vegetariana"
+        ],
+        "music": {
+          "genre": [
+            "Rock",
+            "Jazz"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Romance"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Ciencia Ficción",
+            "Misterio"
+          ]
+        }
       },
-      "movies": {
-        "genre": [
-          "Action",
-          "Science Fiction",
-          "Comedy"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Technology",
-          "Mystery"
-        ]
-      }
-    }
-  },
-  {
-    "id": 6,
-    "name": "Sophia Lee",
-    "age": 26,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Black",
-      "skin": "Fair",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Korean",
-        "fluency_level": "Native"
-      },
-      {
-        "name": "Spanish",
-        "fluency_level": "Basic"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Arts",
-      "major": "History",
-      "graduation_year": 2017,
-      "university": "University of ABC"
-    },
-    "projects": {
-      "type": "Historical Research",
-      "name": "Ancient Civilizations",
-      "software_used": [
-        "Microsoft Word"
-      ]
-    },
-    "hobbies": [
-      "Traveling",
-      "Cooking"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Italian",
-        "Korean"
-      ],
-      "music": {
-        "genre": [
-          "Pop",
-          "Classical",
-          "Jazz"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Documentary"
-        ]
-      },
-      "books": {
-        "genre": [
-          "History",
-          "Biography"
-        ]
-      }
-    }
-  },
-  {
-    "id": 7,
-    "name": "William Johnson",
-    "age": 33,
-    "physical_traits": {
-      "physique": "Athletic",
-      "hair": "Blonde",
-      "skin": "Fair",
-      "eye_color": "Blue"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      }
-    ],
-    "education": {
-      "degree": "Master of Business Administration",
-      "major": "Finance",
-      "graduation_year": 2012,
-      "university": "Business School XYZ"
-    },
-    "projects": {
-      "type": "Finance",
-      "name": "Investment Analysis",
-      "software_used": [
-        "Excel",
-        "Bloomberg Terminal"
-      ]
-    },
-    "hobbies": [
-      "Soccer",
-      "Reading"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Steak",
-        "Indian",
-        "Japanese"
-      ],
-      "music": {
-        "genre": [
-          "Classical",
-          "Rock",
-          "Hip-Hop"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Action",
-          "Thriller",
-          "Comedy"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Finance",
-          "Mystery",
-          "Biography"
-        ]
-      }
-    }
-  },
-  {
-    "id": 8,
-    "name": "Olivia Adams",
-    "age": 29,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Red",
-      "skin": "Fair",
-      "eye_color": "Hazel"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "French",
-        "fluency_level": "Intermediate"
-      },
-      {
-        "name": "Spanish",
-        "fluency_level": "Basic"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Science",
-      "major": "Biology",
-      "graduation_year": 2014,
-      "university": "Science University"
-    },
-    "projects": {
-      "type": "Biology",
-      "name": "Genetic Research",
-      "software_used": [
-        "Python",
-        "R"
-      ]
-    },
-    "hobbies": [
-      "Hiking",
-      "Gardening"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Italian",
-        "Sushi"
-      ],
-      "music": {
-        "genre": [
-          "Indie",
-          "Classical",
-          "Jazz"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Romance"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Science",
-          "Mystery"
-        ]
-      }
-    }
-  },
-  {
-    "id": 9,
-    "name": "Ethan Clark",
-    "age": 31,
-    "physical_traits": {
-      "physique": "Muscular",
-      "hair": "Brown",
-      "skin": "Tan",
-      "eye_color": "Green"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "German",
-        "fluency_level": "Intermediate"
-      },
-      {
-        "name": "Russian",
-        "fluency_level": "Basic"
-      }
-    ],
-    "education": {
-      "degree": "Master of Business Administration",
-      "major": "Marketing",
-      "graduation_year": 2013,
-      "university": "Business School XYZ"
-    },
-    "projects": {
-      "type": "Marketing",
-      "name": "Product Launch",
-      "software_used": [
-        "Adobe Photoshop",
-        "Google Ads"
-      ]
-    },
-    "hobbies": [
-      "Soccer",
-      "Traveling"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Steak",
-        "Italian"
-      ],
-      "music": {
-        "genre": [
-          "Pop",
-          "Rock",
-          "Country"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Action",
-          "Comedy"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Biography",
-          "Self-Help"
-        ]
-      }
-    }
-  },
-  {
-    "id": 10,
-    "name": "Ava Martinez",
-    "age": 25,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Black",
-      "skin": "Dark",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Arts",
-      "major": "Sociology",
-      "graduation_year": 2017,
-      "university": "Social Sciences Institute"
-    },
-    "projects": {
-      "type": "Sociology Research",
-      "name": "Cultural Study",
-      "software_used": [
-        "SPSS",
-        "Qualtrics"
-      ]
-    },
-    "hobbies": [
-      "Photography",
-      "Dancing"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Mexican",
-        "Japanese"
-      ],
-      "music": {
-        "genre": [
-          "Pop",
-          "Reggaeton"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Documentary"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Sociology",
-          "Romantic Novel"
-        ]
-      }
-    }
-  },
-  {
-    "id": 11,
-    "name": "Liam Wilson",
-    "age": 29,
-    "physical_traits": {
-      "physique": "Average",
-      "hair": "Blonde",
-      "skin": "Fair",
-      "eye_color": "Blue"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "French",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Science",
-      "major": "Computer Science",
-      "graduation_year": 2014,
-      "university": "University of XYZ"
-    },
-    "projects": [
-      {
-        "type": "Computer Science",
-        "name": "Software Development",
-        "software_used": [
-          "Java",
-          "Python"
-        ]
-      },
-      {
-        "type": "Computer Science",
-        "name": "Web Development",
-        "software_used": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ]
-      }
+      "purchases": [
+        {
+            "product_name": "Graphic Design Software",
+            "product_type": "Digital Tool"
+        },
+        {
+            "product_name": "Art Canvas Set",
+            "product_type": "Art Supplies"
+        }
     ]
-  },
-  {
-    "id": 12,
-    "name": "Grace Turner",
-    "age": 27,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Blonde",
-      "skin": "Fair",
-      "eye_color": "Green"
     },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
+    {
+      "id": 18,
+      "name": "Luis Torres",
+      "age": 42,
+      "physical_traits": {
+        "physique": "Atlético",
+        "hair": "Calvo",
+        "skin": "Morena",
+        "eye_color": "Azul"
       },
-      {
-        "name": "French",
+      "languages": [
+        {
+          "name": "Español",
+          "fluency_level": "Fluido"
+        },
+        {
+          "name": "Inglés",
+          "fluency_level": "Avanzado"
+        }
+      ],
+      "education": {
+        "degree": "Doctorado en Ciencias",
+        "major": "Física",
+        "graduation_year": 2005,
+        "university": "Universidad de DEF"
+      },
+      "hobbies": [
+        "Ajedrez",
+        "Fotografía"
+      ],
+      "pronouns": [
+        "él",
+        "lo"
+      ],
+      "preferences": {
+        "food": [
+          "Japonesa",
+          "BBQ"
+        ],
+        "music": {
+          "genre": [
+            "Clásica",
+            "Country"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Ciencia Ficción",
+            "Documental"
+          ]
+        },
+        "books": {
+          "genre": [
+            "No Ficción",
+            "Fantasía"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Telescope",
+            "product_type": "Optical Instrument"
+        },
+        {
+            "product_name": "Chess Set",
+            "product_type": "Board Game"
+        },
+        {
+            "product_name": "Digital Camera",
+            "product_type": "Photography Equipment"
+        }
+    ]
+    },
+    {
+      "id": 19,
+      "name": "Isabel Rodriguez",
+      "age": 28,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Blonde",
+        "skin": "Fair",
+        "eye_color": "Blue"
+      },
+      "languages": [
+        {
+          "name": "French",
+          "fluency_level": "Advanced"
+        },
+        {
+          "name": "German",
+          "fluency_level": "Beginner"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Arts",
+        "major": "Psychology",
+        "graduation_year": 2015,
+        "university": "University of XYZ"
+      },
+      "hobbies": [
+        "Painting",
+        "Yoga"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Italian",
+          "Vegetarian"
+        ],
+        "music": {
+          "genre": [
+            "Classical",
+            "Indie"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Romance"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Mystery",
+            "Science Fiction"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Art Supplies Set",
+            "product_type": "Painting Supplies"
+        },
+        {
+            "product_name": "Yoga Mat",
+            "product_type": "Fitness Equipment"
+        }
+    ]
+    },
+    {
+      "id": 20,
+      "name": "Miguel Gonzalez",
+      "age": 40,
+      "physical_traits": {
+        "physique": "Average",
+        "hair": "Brown",
+        "skin": "Tan",
+        "eye_color": "Green"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        },
+        {
+          "name": "German",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Computer Science",
+        "graduation_year": 2005,
+        "university": "Tech University"
+      },
+      "hobbies": [
+        "Cycling",
+        "Photography"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Japanese",
+          "Barbecue"
+        ],
+        "music": {
+          "genre": [
+            "Rock",
+            "Electronic"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Science Fiction",
+            "Adventure"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Fantasy",
+            "Self-Help"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Professional Camera",
+            "product_type": "Photography Equipment"
+        },
+        {
+            "product_name": "Bike Repair Kit",
+            "product_type": "Cycling Accessories"
+        }
+    ]
+    },
+    {
+      "id": 21,
+      "name": "Luisa Martinez",
+      "age": 32,
+      "physical_traits": {
+        "physique": "Athletic",
+        "hair": "Red",
+        "skin": "Pale",
+        "eye_color": "Hazel"
+      },
+      "languages": [
+        {
+          "name": "Italian",
+          "fluency_level": "Intermediate"
+        },
+        {
+          "name": "Japanese",
+          "fluency_level": "Basic"
+        }
+      ],
+      "education": {
+        "degree": "Doctor of Medicine",
+        "major": "Pediatrics",
+        "graduation_year": 2012,
+        "university": "Medical University"
+      },
+      "hobbies": [
+        "Sculpting",
+        "Cooking"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Thai",
+          "Vegetarian"
+        ],
+        "music": {
+          "genre": [
+            "Jazz",
+            "R&B"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Documentary",
+            "Drama"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Biography",
+            "Fantasy"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Sculpting Tools Set",
+            "product_type": "Art Supplies"
+        },
+        {
+            "product_name": "Cookbook - Thai Cuisine",
+            "product_type": "Cooking"
+        }
+    ]
+    },
+    {
+      "id": 22,
+      "name": "Juan Ramirez",
+      "age": 45,
+      "physical_traits": {
+        "physique": "Stocky",
+        "hair": "Gray",
+        "skin": "Dark",
+        "eye_color": "Black"
+      },
+      "languages": [
+        {
+          "name": "Portuguese",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Chinese",
+          "fluency_level": "Beginner"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Engineering",
+        "major": "Civil Engineering",
+        "graduation_year": 2000,
+        "university": "Engineering Institute"
+      },
+      "hobbies": [
+        "Gardening",
+        "Fishing"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Mediterranean",
+          "Steakhouse"
+        ],
+        "music": {
+          "genre": [
+            "Blues",
+            "Country"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Western",
+            "Thriller"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Historical Non-Fiction",
+            "Adventure"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Gardening Toolkit",
+            "product_type": "Gardening Tools"
+        },
+        {
+            "product_name": "Chinese Language Learning Book",
+            "product_type": "Educational Book"
+        }
+    ]
+    },
+    {
+      "id": 23,
+      "name": "Elena Gutierrez",
+      "age": 27,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Brown",
+        "skin": "Fair",
+        "eye_color": "Green"
+      },
+      "languages": [
+        {
+          "name": "French",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Chinese",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Environmental Science",
+        "graduation_year": 2016,
+        "university": "Green University"
+      },
+      "hobbies": [
+        "Hiking",
+        "Photography"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Sushi",
+          "Vegetarian"
+        ],
+        "music": {
+          "genre": [
+            "Indie",
+            "Electronic"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Science Fiction",
+            "Romantic Comedy"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Science",
+            "Mystery"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Professional Camera",
+            "product_type": "Photography Equipment"
+        },
+        {
+            "product_name": "Hiking Backpack",
+            "product_type": "Outdoor Gear"
+        },
+        {
+            "product_name": "Science Fiction Bestseller",
+            "product_type": "Book"
+        }
+    ]
+    },
+    {
+      "id": 24,
+      "name": "Ricardo Silva",
+      "age": 38,
+      "physical_traits": {
+        "physique": "Muscular",
+        "hair": "Black",
+        "skin": "Tan",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Advanced"
+        }
+      ],
+      "education": {
+        "degree": "Master of Arts",
+        "major": "History",
+        "graduation_year": 2008,
+        "university": "Historical Institute"
+      },
+      "hobbies": [
+        "Gaming",
+        "Traveling"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Mexican",
+          "Pizza"
+        ],
+        "music": {
+          "genre": [
+            "Metal",
+            "Rock"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Historical Drama"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Historical Fiction",
+            "Fantasy"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Historical Documentary Series",
+            "product_type": "DVD/Streaming"
+        },
+        {
+            "product_name": "Metallica's Greatest Hits",
+            "product_type": "Music Album"
+        }
+    ]
+
+    },
+    {
+      "id": 25,
+      "name": "Marina Fernandez",
+      "age": 29,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Blonde",
+        "skin": "Fair",
+        "eye_color": "Blue"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Japanese",
+          "fluency_level": "Basic"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Business Administration",
+        "major": "Marketing",
+        "graduation_year": 2015,
+        "university": "Marketing School"
+      },
+      "hobbies": [
+        "Dancing",
+        "Reading"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Italian",
+          "Vegetarian"
+        ],
+        "music": {
+          "genre": [
+            "Pop",
+            "R&B"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Romantic Comedy",
+            "Drama"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Romance",
+            "Mystery"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Italian Recipe Book",
+            "product_type": "Cookbook"
+        }
+    ]
+    },
+    {
+      "id": 26,
+      "name": "Alejandro Torres",
+      "age": 33,
+      "physical_traits": {
+        "physique": "Athletic",
+        "hair": "Brown",
+        "skin": "Olive",
+        "eye_color": "Green"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        },
+        {
+          "name": "German",
         "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Arts",
-      "major": "Graphic Design",
-      "graduation_year": 2016,
-      "university": "Art Institute"
-    },
-    "projects": {
-      "type": "Graphic Design",
-      "name": "Logo Design",
-      "software_used": [
-        "Adobe Illustrator",
-        "InDesign"
-      ]
-    },
-    "hobbies": [
-      "Painting",
-      "Traveling"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Italian",
-        "Sushi"
+        }
       ],
-      "music": {
-        "genre": [
-          "Pop",
-          "Electronic"
-        ]
+      "education": {
+        "degree": "Doctor of Veterinary Medicine",
+        "major": "Animal Sciences",
+        "graduation_year": 2012,
+        "university": "Veterinary University"
       },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Documentary"
-        ]
-      }
-    }
-  },
-  {
-    "id": 13,
-    "name": "Elijah Martinez",
-    "age": 29,
-    "physical_traits": {
-      "physique": "Muscular",
-      "hair": "Black",
-      "skin": "Dark",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Science",
-      "major": "Physics",
-      "graduation_year": 2015,
-      "university": "Science University"
-    },
-    "hobbies": [
-      "Hiking",
-      "Astronomy"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Mexican",
-        "Italian",
-        "Mediterranean"
+      "hobbies": [
+        "Cycling",
+        "Playing Guitar"
       ],
-      "music": {
-        "genre": [
-          "Classical",
-          "Rock",
-          "Electronic",
-          "Pop"
-        ]
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Japanese",
+          "Barbecue"
+        ],
+        "music": {
+          "genre": [
+            "Rock",
+            "Blues"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Adventure",
+            "Comedy"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Fantasy",
+            "Science Fiction"
+          ]
+        }
       },
-      "movies": {
-        "genre": [
-          "Sci-Fi",
-          "Adventure",
-          "Fantasy"
-        ]
-      }
-    }
-  },
-  {
-    "id": 14,
-    "name": "Aria Lopez",
-    "age": 24,
-    "physical_traits": {
-      "physique": "Average",
-      "hair": "Brown",
-      "skin": "Fair",
-      "eye_color": "Blue"
+      "purchases": [
+        {
+            "product_name": "Guitar",
+            "product_type": "Musical Instrument"
+        },
+        {
+            "product_name": "Cycling Gear",
+            "product_type": "Outdoor Equipment"
+        }
+    ]
     },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
+    {
+      "id": 27,
+      "name": "Ana Morales",
+      "age": 31,
+      "physical_traits": {
+        "physique": "Curvy",
+        "hair": "Brunette",
+        "skin": "Tan",
+        "eye_color": "Brown"
       },
-      {
-        "name": "Spanish",
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Master of Science",
+        "major": "Environmental Engineering",
+        "graduation_year": 2013,
+        "university": "Environmental Institute"
+      },
+      "hobbies": [
+        "Cooking",
+        "Hiking"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Mediterranean",
+          "Indian"
+        ],
+        "music": {
+          "genre": [
+            "Classical",
+            "Indie"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Romance"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Mystery",
+            "Historical Fiction"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Cookware Set",
+            "product_type": "Kitchenware"
+        },
+        {
+            "product_name": "Hiking Boots",
+            "product_type": "Outdoor Gear"
+        },
+        {
+            "product_name": "Classical Music Collection",
+            "product_type": "Music Album"
+        }
+    ]
+    },
+    {
+      "id": 28,
+      "name": "Gabriela Vargas",
+      "age": 28,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Red",
+        "skin": "Fair",
+        "eye_color": "Blue"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Italian",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Arts",
+        "major": "Literature",
+        "graduation_year": 2014,
+        "university": "Arts College"
+      },
+      "hobbies": [
+        "Writing",
+        "Painting"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Japanese",
+          "Vegetarian"
+        ],
+        "music": {
+          "genre": [
+            "Indie",
+            "Alternative"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Fantasy",
+            "Mystery"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Science Fiction",
+            "Dystopian"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Romantic Comedy DVD Pack",
+            "product_type": "Movies"
+        },
+        {
+            "product_name": "Indie Art Supplies",
+            "product_type": "Art Supplies"
+        }
+    ]
+    },
+    {
+      "id": 29,
+      "name": "Diego Fernandez",
+      "age": 42,
+      "physical_traits": {
+        "physique": "Muscular",
+        "hair": "Brown",
+        "skin": "Tan",
+        "eye_color": "Green"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        },
+        {
+          "name": "Russian",
+          "fluency_level": "Beginner"
+        }
+      ],
+      "education": {
+        "degree": "Master of Science",
+        "major": "Physics",
+        "graduation_year": 2007,
+        "university": "Physics Institute"
+      },
+      "hobbies": [
+        "Rock Climbing",
+        "Photography"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Mexican",
+          "Steakhouse"
+        ],
+        "music": {
+          "genre": [
+            "Rock",
+            "Metal"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Science Fiction"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Science",
+            "Fantasy"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Rock Climbing Gear",
+            "product_type": "Outdoor Equipment"
+        }
+    ]
+    },
+    {
+      "id": 30,
+      "name": "Isabella Cruz",
+      "age": 30,
+      "physical_traits": {
+        "physique": "Curvy",
+        "hair": "Blonde",
+        "skin": "Fair",
+        "eye_color": "Blue"
+      },
+      "languages": [
+        {
+          "name": "French",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Japanese",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Business Administration",
+        "major": "Marketing",
+        "graduation_year": 2012,
+        "university": "Business School"
+      },
+      "hobbies": [
+        "Traveling",
+        "Dancing"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Italian",
+          "Healthy"
+        ],
+        "music": {
+          "genre": [
+            "Pop",
+            "Electronic"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Romantic Comedy",
+            "Drama"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Romance",
+            "Mystery"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Italian Cooking Class Voucher",
+            "product_type": "Experience"
+        },
+        {
+            "product_name": "Self-Help Bestseller",
+            "product_type": "Book"
+        }
+    ]
+    },
+    {
+      "id": 31,
+      "name": "Lucas Morales",
+      "age": 34,
+      "physical_traits": {
+        "physique": "Athletic",
+        "hair": "Black",
+        "skin": "Olive",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        },
+        {
+          "name": "German",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Doctor of Veterinary Medicine",
+        "major": "Animal Sciences",
+        "graduation_year": 2010,
+        "university": "Veterinary University"
+      },
+      "hobbies": [
+        "Hiking",
+        "Gaming"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Japanese",
+          "Barbecue"
+        ],
+        "music": {
+          "genre": [
+            "Rock",
+            "Blues"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Adventure",
+            "Comedy"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Fantasy",
+            "Science Fiction"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Veterinary Medicine Reference Book",
+            "product_type": "Educational Book"
+        },
+        {
+            "product_name": "Hiking Backpack",
+            "product_type": "Outdoor Gear"
+        }
+    ]
+    },
+    {
+      "id": 28,
+      "name": "Maria Hernandez",
+      "age": 29,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Brunette",
+        "skin": "Fair",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "Italian",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Master of Science",
+        "major": "Computer Science",
+        "graduation_year": 2014,
+        "university": "Tech University"
+      },
+      "hobbies": [
+        "Coding",
+        "Reading"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Mediterranean",
+          "Japanese"
+        ],
+        "music": {
+          "genre": [
+            "Electronic",
+            "Pop"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Sci-Fi",
+            "Drama"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Science Fiction",
+            "Mystery"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Language Learning Software",
+            "product_type": "Educational Software"
+        },
+        {
+            "product_name": "Meditation Guide Book",
+            "product_type": "Self-Help"
+        },
+        {
+            "product_name": "Classical Music Album",
+            "product_type": "Music Album"
+        }
+    ]
+    },
+    {
+      "id": 29,
+      "name": "Diego Ramos",
+      "age": 31,
+      "physical_traits": {
+        "physique": "Muscular",
+        "hair": "Black",
+        "skin": "Tan",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Master of Arts",
+        "major": "Political Science",
+        "graduation_year": 2013,
+        "university": "Political Institute"
+      },
+      "hobbies": [
+        "Soccer",
+        "Traveling"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Mexican",
+          "Italian"
+        ],
+        "music": {
+          "genre": [
+            "Reggaeton",
+            "Hip-Hop"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Drama"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Political",
+            "Thriller"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Steak Grilling Set",
+            "product_type": "Cookware"
+        },
+        {
+            "product_name": "Action Movie Collection",
+            "product_type": "Movies"
+        }
+    ]
+    },
+    {
+      "id": 30,
+      "name": "Camila Lopez",
+      "age": 29,
+      "physical_traits": {
+        "physique": "Slim",
+        "hair": "Blonde",
+        "skin": "Fair",
+        "eye_color": "Blue"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "German",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Bachelor of Science",
+        "major": "Biotechnology",
+        "graduation_year": 2014,
+        "university": "Biotech University"
+      },
+      "hobbies": [
+        "Photography",
+        "Yoga"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Sushi",
+          "Vegetarian"
+        ],
+        "music": {
+          "genre": [
+            "Indie",
+            "Pop"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Romantic Comedy",
+            "Documentary"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Science Fiction",
+            "Mystery"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Gardening Tools Set",
+            "product_type": "Gardening"
+        },
+        {
+            "product_name": "Mystery Novel Series",
+            "product_type": "Books"
+        },
+        {
+            "product_name": "Classical Music Collection",
+            "product_type": "Music Album"
+        }
+    ]
+    },
+    {
+      "id": 31,
+      "name": "Raul Gomez",
+      "age": 36,
+      "physical_traits": {
+        "physique": "Athletic",
+        "hair": "Brown",
+        "skin": "Olive",
+        "eye_color": "Green"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        },
+        {
+          "name": "Chinese",
+          "fluency_level": "Beginner"
+        }
+      ],
+      "education": {
+        "degree": "Doctor of Medicine",
+        "major": "Cardiology",
+        "graduation_year": 2010,
+        "university": "Medical University"
+      },
+      "hobbies": [
+        "Running",
+        "Playing Guitar"
+      ],
+      "pronouns": [
+        "he",
+        "him"
+      ],
+      "preferences": {
+        "food": [
+          "Mediterranean",
+          "BBQ"
+        ],
+        "music": {
+          "genre": [
+            "Rock",
+            "Blues"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Adventure"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Medical",
+            "Thriller"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Adventure Travel Package",
+            "product_type": "Travel Experience"
+        },
+        {
+            "product_name": "Indie Movie Collection",
+            "product_type": "Movies"
+        }
+    ]
+    },
+    
+    {
+      "id": 32,
+      "name": "Valentina Ortiz",
+      "age": 28,
+      "physical_traits": {
+        "physique": "Curvy",
+        "hair": "Brunette",
+        "skin": "Tan",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Fluent"
+        },
+        {
+          "name": "French",
+          "fluency_level": "Intermediate"
+        }
+      ],
+      "education": {
+        "degree": "Master of Arts",
+        "major": "Graphic Design",
+        "graduation_year": 2015,
+        "university": "Design Institute"
+      },
+      "hobbies": [
+        "Drawing",
+        "Traveling"
+      ],
+      "pronouns": [
+        "she",
+        "her"
+      ],
+      "preferences": {
+        "food": [
+          "Japanese",
+          "Italian"
+        ],
+        "music": {
+          "genre": [
+            "Pop",
+            "Electronic"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Drama",
+            "Romantic Comedy"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Graphic Novels",
+            "Mystery"
+          ]
+        }
+      },
+      "purchases": [
+        {
+            "product_name": "Photography Masterclass",
+            "product_type": "Online Course"
+        },
+        {
+            "product_name": "Rock Music Anthology",
+            "product_type": "Music Album"
+        },
+        {
+            "product_name": "Sci-Fi Book Series",
+            "product_type": "Books"
+        }
+    ]
+    },
+    
+    {
+      "id": 33,
+      "name": "Pedro Rivera",
+      "age": 34,
+      "physical_traits": {
+        "physique": "Average",
+        "hair": "Black",
+        "skin": "Olive",
+        "eye_color": "Brown"
+      },
+      "languages": [
+        {
+          "name": "Spanish",
+          "fluency_level": "Native"
+        },
+        {
+          "name": "German",
         "fluency_level": "Intermediate"
-      },
-      {
-        "name": "French",
-        "fluency_level": "Basic"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Arts",
-      "major": "Political Science",
-      "graduation_year": 2017,
-      "university": "Political Studies Institute"
-    },
-    "projects": {
-      "type": "Political Research",
-      "name": "Election Analysis",
-      "software_used": [
-        "Excel",
-        "SPSS"
-      ]
-    },
-    "hobbies": [
-      "Traveling",
-      "Gardening"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Italian",
-        "Sushi",
-        "Indian"
+        }
       ],
-      "music": {
-        "genre": [
-          "Pop",
-          "Classical",
-          "Jazz",
-          "Hip-Hop"
-        ]
+      "education": {
+        "degree": "Bachelor of Business Administration",
+        "major": "Finance",
+        "graduation_year": 2010,
+        "university": "University of ABC"
       },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Documentary"
-        ]
-      }
-    }
-  },
-  {
-    "id": 15,
-    "name": "Jackson Turner",
-    "age": 33,
-    "physical_traits": {
-      "physique": "Athletic",
-      "hair": "Black",
-      "skin": "Tan",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Spanish",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Master of Business Administration",
-      "major": "Marketing",
-      "graduation_year": 2012,
-      "university": "Business School XYZ"
-    },
-    "hobbies": [
-      "Soccer",
-      "Hiking"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Steak",
-        "Indian",
-        "Mexican"
+      "hobbies": [
+        "Cycling",
+        "Playing Guitar"
       ],
-      "music": {
-        "genre": [
-          "Classical",
-          "Rock",
-          "Hip-Hop",
-          "Country"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Action",
-          "Thriller",
-          "Comedy"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Finance",
-          "Mystery",
-          "Biography"
-        ]
-      }
-    }
-  },
-  {
-    "id": 16,
-    "name": "Scarlett Adams",
-    "age": 28,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Blonde",
-      "skin": "Fair",
-      "eye_color": "Green"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "French",
-        "fluency_level": "Intermediate"
-      },
-      {
-        "name": "German",
-        "fluency_level": "Basic"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Science",
-      "major": "Chemistry",
-      "graduation_year": 2015,
-      "university": "Science University"
-    },
-    "projects": [
-      {
-        "type": "Chemistry Research",
-        "name": "Organic Synthesis",
-        "software_used": [
-          "ChemDraw",
-          "Spectroscopy Software"
-        ]
-      }
-    ],
-    "hobbies": [
-      "Hiking",
-      "Cooking"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Italian",
-        "Sushi",
-        "Mexican"
+      "pronouns": [
+        "he",
+        "him"
       ],
-      "music": {
-        "genre": [
-          "Pop",
-          "Jazz",
-          "Rock",
-          "Classical",
-          "Indie"
-        ]
+      "preferences": {
+        "food": [
+          "Mexican",
+          "Sushi"
+        ],
+        "music": {
+          "genre": [
+            "Rock",
+            "Blues"
+          ]
+        },
+        "movies": {
+          "genre": [
+            "Action",
+            "Comedy"
+          ]
+        },
+        "books": {
+          "genre": [
+            "Historical Fiction",
+            "Thriller"
+          ]
+        }
       },
-      "movies": {
-        "genre": [
-          "Romance",
-          "Drama"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Science",
-          "Mystery"
-        ]
-      }
+      "purchases": [
+        {
+            "product_name": "Spanish Cuisine Cooking Class",
+            "product_type": "Cooking Course"
+        },
+        {
+            "product_name": "Classical Music Concert Tickets",
+            "product_type": "Event Tickets"
+        },
+        {
+            "product_name": "Historical Fiction Book Series",
+            "product_type": "Books"
+        }
+    ]
     }
-  },
-  {
-    "id": 17,
-    "name": "Ana Soto",
-    "age": 28,
-    "physical_traits": {
-      "physique": "Delgado",
-      "hair": "Rubio",
-      "skin": "Blanca",
-      "eye_color": "Verde"
-    },
-    "languages": [
-      {
-        "name": "Español",
-        "fluency_level": "Fluido"
-      },
-      {
-        "name": "Francés",
-        "fluency_level": "Intermedio"
-      }
-    ],
-    "education": {
-      "degree": "Licenciatura en Artes",
-      "major": "Diseño Gráfico",
-      "graduation_year": 2017,
-      "university": "Universidad XYZ"
-    },
-    "hobbies": [
-      "Pintura",
-      "Ciclismo"
-    ],
-    "pronouns": [
-      "ella",
-      "la"
-    ],
-    "preferences": {
-      "food": [
-        "Italiana",
-        "Vegetariana"
-      ],
-      "music": {
-        "genre": [
-          "Rock",
-          "Jazz"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Romance"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Ciencia Ficción",
-          "Misterio"
-        ]
-      }
-    }
-  },
-  {
-    "id": 18,
-    "name": "Luis Torres",
-    "age": 42,
-    "physical_traits": {
-      "physique": "Atlético",
-      "hair": "Calvo",
-      "skin": "Morena",
-      "eye_color": "Azul"
-    },
-    "languages": [
-      {
-        "name": "Español",
-        "fluency_level": "Fluido"
-      },
-      {
-        "name": "Inglés",
-        "fluency_level": "Avanzado"
-      }
-    ],
-    "education": {
-      "degree": "Doctorado en Ciencias",
-      "major": "Física",
-      "graduation_year": 2005,
-      "university": "Universidad de DEF"
-    },
-    "hobbies": [
-      "Ajedrez",
-      "Fotografía"
-    ],
-    "pronouns": [
-      "él",
-      "lo"
-    ],
-    "preferences": {
-      "food": [
-        "Japonesa",
-        "BBQ"
-      ],
-      "music": {
-        "genre": [
-          "Clásica",
-          "Country"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Ciencia Ficción",
-          "Documental"
-        ]
-      },
-      "books": {
-        "genre": [
-          "No Ficción",
-          "Fantasía"
-        ]
-      }
-    }
-  },
-  {
-    "id": 19,
-    "name": "Isabel Rodriguez",
-    "age": 28,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Blonde",
-      "skin": "Fair",
-      "eye_color": "Blue"
-    },
-    "languages": [
-      {
-        "name": "French",
-        "fluency_level": "Advanced"
-      },
-      {
-        "name": "German",
-        "fluency_level": "Beginner"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Arts",
-      "major": "Psychology",
-      "graduation_year": 2015,
-      "university": "University of XYZ"
-    },
-    "hobbies": [
-      "Painting",
-      "Yoga"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Italian",
-        "Vegetarian"
-      ],
-      "music": {
-        "genre": [
-          "Classical",
-          "Indie"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Romance"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Mystery",
-          "Science Fiction"
-        ]
-      }
-    }
-  },
-  {
-    "id": 20,
-    "name": "Miguel Gonzalez",
-    "age": 40,
-    "physical_traits": {
-      "physique": "Average",
-      "hair": "Brown",
-      "skin": "Tan",
-      "eye_color": "Green"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      },
-      {
-        "name": "German",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Science",
-      "major": "Computer Science",
-      "graduation_year": 2005,
-      "university": "Tech University"
-    },
-    "hobbies": [
-      "Cycling",
-      "Photography"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Japanese",
-        "Barbecue"
-      ],
-      "music": {
-        "genre": [
-          "Rock",
-          "Electronic"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Science Fiction",
-          "Adventure"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Fantasy",
-          "Self-Help"
-        ]
-      }
-    }
-  },
-  {
-    "id": 21,
-    "name": "Luisa Martinez",
-    "age": 32,
-    "physical_traits": {
-      "physique": "Athletic",
-      "hair": "Red",
-      "skin": "Pale",
-      "eye_color": "Hazel"
-    },
-    "languages": [
-      {
-        "name": "Italian",
-        "fluency_level": "Intermediate"
-      },
-      {
-        "name": "Japanese",
-        "fluency_level": "Basic"
-      }
-    ],
-    "education": {
-      "degree": "Doctor of Medicine",
-      "major": "Pediatrics",
-      "graduation_year": 2012,
-      "university": "Medical University"
-    },
-    "hobbies": [
-      "Sculpting",
-      "Cooking"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Thai",
-        "Vegetarian"
-      ],
-      "music": {
-        "genre": [
-          "Jazz",
-          "R&B"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Documentary",
-          "Drama"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Biography",
-          "Fantasy"
-        ]
-      }
-    }
-  },
-  {
-    "id": 22,
-    "name": "Juan Ramirez",
-    "age": 45,
-    "physical_traits": {
-      "physique": "Stocky",
-      "hair": "Gray",
-      "skin": "Dark",
-      "eye_color": "Black"
-    },
-    "languages": [
-      {
-        "name": "Portuguese",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Chinese",
-        "fluency_level": "Beginner"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Engineering",
-      "major": "Civil Engineering",
-      "graduation_year": 2000,
-      "university": "Engineering Institute"
-    },
-    "hobbies": [
-      "Gardening",
-      "Fishing"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Mediterranean",
-        "Steakhouse"
-      ],
-      "music": {
-        "genre": [
-          "Blues",
-          "Country"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Western",
-          "Thriller"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Historical Non-Fiction",
-          "Adventure"
-        ]
-      }
-    }
-  },
-  {
-    "id": 23,
-    "name": "Elena Gutierrez",
-    "age": 27,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Brown",
-      "skin": "Fair",
-      "eye_color": "Green"
-    },
-    "languages": [
-      {
-        "name": "French",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Chinese",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Science",
-      "major": "Environmental Science",
-      "graduation_year": 2016,
-      "university": "Green University"
-    },
-    "hobbies": [
-      "Hiking",
-      "Photography"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Sushi",
-        "Vegetarian"
-      ],
-      "music": {
-        "genre": [
-          "Indie",
-          "Electronic"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Science Fiction",
-          "Romantic Comedy"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Science",
-          "Mystery"
-        ]
-      }
-    }
-  },
-  {
-    "id": 24,
-    "name": "Ricardo Silva",
-    "age": 38,
-    "physical_traits": {
-      "physique": "Muscular",
-      "hair": "Black",
-      "skin": "Tan",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      },
-      {
-        "name": "French",
-        "fluency_level": "Advanced"
-      }
-    ],
-    "education": {
-      "degree": "Master of Arts",
-      "major": "History",
-      "graduation_year": 2008,
-      "university": "Historical Institute"
-    },
-    "hobbies": [
-      "Gaming",
-      "Traveling"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Mexican",
-        "Pizza"
-      ],
-      "music": {
-        "genre": [
-          "Metal",
-          "Rock"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Action",
-          "Historical Drama"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Historical Fiction",
-          "Fantasy"
-        ]
-      }
-    }
-  },
-  {
-    "id": 25,
-    "name": "Marina Fernandez",
-    "age": 29,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Blonde",
-      "skin": "Fair",
-      "eye_color": "Blue"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Japanese",
-        "fluency_level": "Basic"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Business Administration",
-      "major": "Marketing",
-      "graduation_year": 2015,
-      "university": "Marketing School"
-    },
-    "hobbies": [
-      "Dancing",
-      "Reading"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Italian",
-        "Vegetarian"
-      ],
-      "music": {
-        "genre": [
-          "Pop",
-          "R&B"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Romantic Comedy",
-          "Drama"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Romance",
-          "Mystery"
-        ]
-      }
-    }
-  },
-  {
-    "id": 26,
-    "name": "Alejandro Torres",
-    "age": 33,
-    "physical_traits": {
-      "physique": "Athletic",
-      "hair": "Brown",
-      "skin": "Olive",
-      "eye_color": "Green"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      },
-      {
-        "name": "German",
-      "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Doctor of Veterinary Medicine",
-      "major": "Animal Sciences",
-      "graduation_year": 2012,
-      "university": "Veterinary University"
-    },
-    "hobbies": [
-      "Cycling",
-      "Playing Guitar"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Japanese",
-        "Barbecue"
-      ],
-      "music": {
-        "genre": [
-          "Rock",
-          "Blues"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Adventure",
-          "Comedy"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Fantasy",
-          "Science Fiction"
-        ]
-      }
-    }
-  },
-  {
-    "id": 27,
-    "name": "Ana Morales",
-    "age": 31,
-    "physical_traits": {
-      "physique": "Curvy",
-      "hair": "Brunette",
-      "skin": "Tan",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "French",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Master of Science",
-      "major": "Environmental Engineering",
-      "graduation_year": 2013,
-      "university": "Environmental Institute"
-    },
-    "hobbies": [
-      "Cooking",
-      "Hiking"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Mediterranean",
-        "Indian"
-      ],
-      "music": {
-        "genre": [
-          "Classical",
-          "Indie"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Romance"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Mystery",
-          "Historical Fiction"
-        ]
-      }
-    }
-  },
-  {
-    "id": 28,
-    "name": "Gabriela Vargas",
-    "age": 28,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Red",
-      "skin": "Fair",
-      "eye_color": "Blue"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Italian",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Arts",
-      "major": "Literature",
-      "graduation_year": 2014,
-      "university": "Arts College"
-    },
-    "hobbies": [
-      "Writing",
-      "Painting"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Japanese",
-        "Vegetarian"
-      ],
-      "music": {
-        "genre": [
-          "Indie",
-          "Alternative"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Fantasy",
-          "Mystery"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Science Fiction",
-          "Dystopian"
-        ]
-      }
-    }
-  },
-  {
-    "id": 29,
-    "name": "Diego Fernandez",
-    "age": 42,
-    "physical_traits": {
-      "physique": "Muscular",
-      "hair": "Brown",
-      "skin": "Tan",
-      "eye_color": "Green"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      },
-      {
-        "name": "Russian",
-        "fluency_level": "Beginner"
-      }
-    ],
-    "education": {
-      "degree": "Master of Science",
-      "major": "Physics",
-      "graduation_year": 2007,
-      "university": "Physics Institute"
-    },
-    "hobbies": [
-      "Rock Climbing",
-      "Photography"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Mexican",
-        "Steakhouse"
-      ],
-      "music": {
-        "genre": [
-          "Rock",
-          "Metal"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Action",
-          "Science Fiction"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Science",
-          "Fantasy"
-        ]
-      }
-    }
-  },
-  {
-    "id": 30,
-    "name": "Isabella Cruz",
-    "age": 30,
-    "physical_traits": {
-      "physique": "Curvy",
-      "hair": "Blonde",
-      "skin": "Fair",
-      "eye_color": "Blue"
-    },
-    "languages": [
-      {
-        "name": "French",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Japanese",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Business Administration",
-      "major": "Marketing",
-      "graduation_year": 2012,
-      "university": "Business School"
-    },
-    "hobbies": [
-      "Traveling",
-      "Dancing"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Italian",
-        "Healthy"
-      ],
-      "music": {
-        "genre": [
-          "Pop",
-          "Electronic"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Romantic Comedy",
-          "Drama"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Romance",
-          "Mystery"
-        ]
-      }
-    }
-  },
-  {
-    "id": 31,
-    "name": "Lucas Morales",
-    "age": 34,
-    "physical_traits": {
-      "physique": "Athletic",
-      "hair": "Black",
-      "skin": "Olive",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      },
-      {
-        "name": "German",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Doctor of Veterinary Medicine",
-      "major": "Animal Sciences",
-      "graduation_year": 2010,
-      "university": "Veterinary University"
-    },
-    "hobbies": [
-      "Hiking",
-      "Gaming"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Japanese",
-        "Barbecue"
-      ],
-      "music": {
-        "genre": [
-          "Rock",
-          "Blues"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Adventure",
-          "Comedy"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Fantasy",
-          "Science Fiction"
-        ]
-      }
-    }
-  },
-  {
-    "id": 28,
-    "name": "Maria Hernandez",
-    "age": 29,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Brunette",
-      "skin": "Fair",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "Italian",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Master of Science",
-      "major": "Computer Science",
-      "graduation_year": 2014,
-      "university": "Tech University"
-    },
-    "hobbies": [
-      "Coding",
-      "Reading"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Mediterranean",
-        "Japanese"
-      ],
-      "music": {
-        "genre": [
-          "Electronic",
-          "Pop"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Sci-Fi",
-          "Drama"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Science Fiction",
-          "Mystery"
-        ]
-      }
-    }
-  },
-  {
-    "id": 29,
-    "name": "Diego Ramos",
-    "age": 31,
-    "physical_traits": {
-      "physique": "Muscular",
-      "hair": "Black",
-      "skin": "Tan",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      },
-      {
-        "name": "French",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Master of Arts",
-      "major": "Political Science",
-      "graduation_year": 2013,
-      "university": "Political Institute"
-    },
-    "hobbies": [
-      "Soccer",
-      "Traveling"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Mexican",
-        "Italian"
-      ],
-      "music": {
-        "genre": [
-          "Reggaeton",
-          "Hip-Hop"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Action",
-          "Drama"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Political",
-          "Thriller"
-        ]
-      }
-    }
-  },
-  {
-    "id": 30,
-    "name": "Camila Lopez",
-    "age": 29,
-    "physical_traits": {
-      "physique": "Slim",
-      "hair": "Blonde",
-      "skin": "Fair",
-      "eye_color": "Blue"
-    },
-    "languages": [
-      {
-        "name": "English",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "German",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Science",
-      "major": "Biotechnology",
-      "graduation_year": 2014,
-      "university": "Biotech University"
-    },
-    "hobbies": [
-      "Photography",
-      "Yoga"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Sushi",
-        "Vegetarian"
-      ],
-      "music": {
-        "genre": [
-          "Indie",
-          "Pop"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Romantic Comedy",
-          "Documentary"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Science Fiction",
-          "Mystery"
-        ]
-      }
-    }
-  },
-  {
-    "id": 31,
-    "name": "Raul Gomez",
-    "age": 36,
-    "physical_traits": {
-      "physique": "Athletic",
-      "hair": "Brown",
-      "skin": "Olive",
-      "eye_color": "Green"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      },
-      {
-        "name": "Chinese",
-        "fluency_level": "Beginner"
-      }
-    ],
-    "education": {
-      "degree": "Doctor of Medicine",
-      "major": "Cardiology",
-      "graduation_year": 2010,
-      "university": "Medical University"
-    },
-    "hobbies": [
-      "Running",
-      "Playing Guitar"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Mediterranean",
-        "BBQ"
-      ],
-      "music": {
-        "genre": [
-          "Rock",
-          "Blues"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Action",
-          "Adventure"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Medical",
-          "Thriller"
-        ]
-      }
-    }
-  },
-  
-  {
-    "id": 32,
-    "name": "Valentina Ortiz",
-    "age": 28,
-    "physical_traits": {
-      "physique": "Curvy",
-      "hair": "Brunette",
-      "skin": "Tan",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Fluent"
-      },
-      {
-        "name": "French",
-        "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Master of Arts",
-      "major": "Graphic Design",
-      "graduation_year": 2015,
-      "university": "Design Institute"
-    },
-    "hobbies": [
-      "Drawing",
-      "Traveling"
-    ],
-    "pronouns": [
-      "she",
-      "her"
-    ],
-    "preferences": {
-      "food": [
-        "Japanese",
-        "Italian"
-      ],
-      "music": {
-        "genre": [
-          "Pop",
-          "Electronic"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Drama",
-          "Romantic Comedy"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Graphic Novels",
-          "Mystery"
-        ]
-      }
-    }
-  },
-  
-  {
-    "id": 33,
-    "name": "Pedro Rivera",
-    "age": 34,
-    "physical_traits": {
-      "physique": "Average",
-      "hair": "Black",
-      "skin": "Olive",
-      "eye_color": "Brown"
-    },
-    "languages": [
-      {
-        "name": "Spanish",
-        "fluency_level": "Native"
-      },
-      {
-        "name": "German",
-      "fluency_level": "Intermediate"
-      }
-    ],
-    "education": {
-      "degree": "Bachelor of Business Administration",
-      "major": "Finance",
-      "graduation_year": 2010,
-      "university": "University of ABC"
-    },
-    "hobbies": [
-      "Cycling",
-      "Playing Guitar"
-    ],
-    "pronouns": [
-      "he",
-      "him"
-    ],
-    "preferences": {
-      "food": [
-        "Mexican",
-        "Sushi"
-      ],
-      "music": {
-        "genre": [
-          "Rock",
-          "Blues"
-        ]
-      },
-      "movies": {
-        "genre": [
-          "Action",
-          "Comedy"
-        ]
-      },
-      "books": {
-        "genre": [
-          "Historical Fiction",
-          "Thriller"
-        ]
-      }
-    }
-  }
-]
+  ]
