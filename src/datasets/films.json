@@ -1,0 +1,779 @@
+[
+  {
+    "id": 1,
+    "name": "The Matrix",
+    "year": 1999,
+    "genre": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "director": "Lana Wachowski",
+    "cast": [
+      "Keanu Reeves",
+      "Carrie-Anne Moss",
+      "Laurence Fishburne"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 4,
+      "nominations": 33
+    },
+    "ratings": {
+      "IMDb": 8.7,
+      "Rotten Tomatoes": 87,
+      "Metacritic": 73
+    },
+    "box_office": "$463.5 million"
+  },
+  {
+    "id": 2,
+    "name": "Inception",
+    "year": 2010,
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Elliot Page"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 4,
+      "nominations": 46
+    },
+    "ratings": {
+      "IMDb": 8.8,
+      "Rotten Tomatoes": 87,
+      "Metacritic": 74
+    },
+    "box_office": "$828.3 million"
+  },
+  {
+    "id": 4,
+    "name": "Pulp Fiction",
+    "year": 1994,
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "director": "Quentin Tarantino",
+    "cast": [
+      "John Travolta",
+      "Uma Thurman",
+      "Samuel L. Jackson"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 1,
+      "nominations": 68
+    },
+    "ratings": {
+      "IMDb": 8.9,
+      "Rotten Tomatoes": 92,
+      "Metacritic": 94
+    },
+    "box_office": "$213.9 million"
+  },
+ 
+  {
+    "id": 7,
+    "name": "Jurassic Park",
+    "year": 1993,
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "director": "Steven Spielberg",
+    "cast": [
+      "Sam Neill",
+      "Laura Dern",
+      "Jeff Goldblum"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 28,
+      "nominations": 24
+    },
+    "ratings": {
+      "IMDb": 8.1,
+      "Rotten Tomatoes": 91,
+      "Metacritic": 68
+    },
+    "box_office": "$1.03 billion"
+  },
+  {
+    "id": 8,
+    "name": "The Dark Knight",
+    "year": 2008,
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Christian Bale",
+      "Heath Ledger",
+      "Aaron Eckhart"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 132,
+      "nominations": 185
+    },
+    "ratings": {
+      "IMDb": 9.0,
+      "Rotten Tomatoes": 94,
+      "Metacritic": 84
+    },
+    "box_office": "$1.005 billion"
+  },
+  {
+    "id": 9,
+    "name": "Titanic",
+    "year": 1997,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "James Cameron",
+    "cast": [
+      "Leonardo DiCaprio",
+      "Kate Winslet",
+      "Billy Zane"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 117,
+      "nominations": 211
+    },
+    "ratings": {
+      "IMDb": 7.8,
+      "Rotten Tomatoes": 89,
+      "Metacritic": 75
+    },
+    "box_office": "$2.208 billion"
+  },
+  {
+    "id": 10,
+    "name": "Avatar",
+    "year": 2009,
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "director": "James Cameron",
+    "cast": [
+      "Sam Worthington",
+      "Zoe Saldana",
+      "Sigourney Weaver"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 88,
+      "nominations": 156
+    },
+    "ratings": {
+      "IMDb": 7.8,
+      "Rotten Tomatoes": 82,
+      "Metacritic": 83
+    },
+    "box_office": "$2.847 billion"
+  },
+  {
+    "id": 11,
+    "name": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Peter Jackson",
+    "cast": [
+      "Elijah Wood",
+      "Viggo Mortensen",
+      "Ian McKellen"
+    ],
+    "language": "English",
+    "country": "New Zealand",
+    "awards": {
+      "wins": 11,
+      "nominations": 279
+    },
+    "ratings": {
+      "IMDb": 8.9,
+      "Rotten Tomatoes": 93,
+      "Metacritic": 94
+    },
+    "box_office": "$1.142 billion"
+  },
+  {
+    "id": 12,
+    "name": "Braveheart",
+    "year": 1995,
+    "genre": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "director": "Mel Gibson",
+    "cast": [
+      "Mel Gibson",
+      "Sophie Marceau",
+      "Patrick McGoohan"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 26,
+      "nominations": 37
+    },
+    "ratings": {
+      "IMDb": 8.3,
+      "Rotten Tomatoes": 78,
+      "Metacritic": 68
+    },
+    "box_office": "$210.4 million"
+  },
+ 
+  {
+    "id": 14,
+    "name": "The Social Network",
+    "year": 2010,
+    "genre": [
+      "Biography",
+      "Drama"
+    ],
+    "director": "David Fincher",
+    "cast": [
+      "Jesse Eisenberg",
+      "Andrew Garfield",
+      "Justin Timberlake"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 171,
+      "nominations": 258
+    },
+    "ratings": {
+      "IMDb": 7.7,
+      "Rotten Tomatoes": 96,
+      "Metacritic": 95
+    },
+    "box_office": "$224.9 million"
+  },
+  {
+    "id": 16,
+    "name": "Forrest Gump",
+    "year": 1994,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Robert Zemeckis",
+    "cast": [
+      "Tom Hanks",
+      "Robin Wright",
+      "Gary Sinise"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 47,
+      "nominations": 75
+    },
+    "ratings": {
+      "IMDb": 8.8,
+      "Rotten Tomatoes": 72,
+      "Metacritic": 82
+    },
+    "box_office": "$678.2 million"
+  },
+  {
+    "id": 17,
+    "name": "The Matrix Reloaded",
+    "year": 2003,
+    "genre": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "director": "The Wachowskis",
+    "cast": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 23,
+      "nominations": 59
+    },
+    "ratings": {
+      "IMDb": 8.2,
+      "Rotten Tomatoes": 81,
+      "Metacritic": 79
+    },
+    "box_office": "$481.3 million"
+  },
+  {
+    "id": 18,
+    "name": "The Departed",
+    "year": 2006,
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Martin Scorsese",
+    "cast": [
+      "Leonardo DiCaprio",
+      "Matt Damon",
+      "Jack Nicholson"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 103,
+      "nominations": 139
+    },
+    "ratings": {
+      "IMDb": 8.5,
+      "Rotten Tomatoes": 91,
+      "Metacritic": 85
+    },
+    "box_office": "$291.5 million"
+  },
+  {
+    "id": 19,
+    "name": "Inglourious Basterds",
+    "year": 2009,
+    "genre": [
+      "Adventure",
+      "Drama",
+      "War"
+    ],
+    "director": "Quentin Tarantino",
+    "cast": [
+      "Brad Pitt",
+      "Diane Kruger",
+      "Eli Roth"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 88,
+      "nominations": 152
+    },
+    "ratings": {
+      "IMDb": 8.3,
+      "Rotten Tomatoes": 89,
+      "Metacritic": 69
+    },
+    "box_office": "$321.5 million"
+  },
+  {
+    "id": 20,
+    "name": "Good Will Hunting",
+    "year": 1997,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Gus Van Sant",
+    "cast": [
+      "Matt Damon",
+      "Robin Williams",
+      "Ben Affleck"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 39,
+      "nominations": 67
+    },
+    "ratings": {
+      "IMDb": 8.3,
+      "Rotten Tomatoes": 97,
+      "Metacritic": 70
+    },
+    "box_office": "$225.9 million"
+  },
+  {
+    "id": 21,
+    "name": "Fight Club",
+    "year": 1999,
+    "genre": [
+      "Drama"
+    ],
+    "director": "David Fincher",
+    "cast": [
+      "Brad Pitt",
+      "Edward Norton",
+      "Helena Bonham Carter"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 10,
+      "nominations": 41
+    },
+    "ratings": {
+      "IMDb": 8.8,
+      "Rotten Tomatoes": 79,
+      "Metacritic": 66
+    },
+    "box_office": "$101.2 million"
+  },
+  {
+    "id": 22,
+    "name": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": [
+      "Drama"
+    ],
+    "director": "Frank Darabont",
+    "cast": [
+      "Tim Robbins",
+      "Morgan Freeman",
+      "Bob Gunton"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 21,
+      "nominations": 35
+    },
+    "ratings": {
+      "IMDb": 9.3,
+      "Rotten Tomatoes": 90,
+      "Metacritic": 80
+    },
+    "box_office": "$58.3 million"
+  },
+  {
+    "id": 23,
+    "name": "The Godfather",
+    "year": 1972,
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "director": "Francis Ford Coppola",
+    "cast": [
+      "Marlon Brando",
+      "Al Pacino",
+      "James Caan"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 34,
+      "nominations": 57
+    },
+    "ratings": {
+      "IMDb": 9.2,
+      "Rotten Tomatoes": 98,
+      "Metacritic": 100
+    },
+    "box_office": "$245.1 million"
+  },
+  {
+    "id": 25,
+    "name": "The Dark Knight",
+    "year": 2008,
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Christian Bale",
+      "Heath Ledger",
+      "Aaron Eckhart"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 157,
+      "nominations": 235
+    },
+    "ratings": {
+      "IMDb": 9.0,
+      "Rotten Tomatoes": 94,
+      "Metacritic": 84
+    },
+    "box_office": "$1.005 billion"
+  },
+  {
+    "id": 26,
+    "name": "Interstellar",
+    "year": 2014,
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Jessica Chastain"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 48,
+      "nominations": 133
+    },
+    "ratings": {
+      "IMDb": 8.6,
+      "Rotten Tomatoes": 72,
+      "Metacritic": 74
+    },
+    "box_office": "$677.5 million"
+  },
+  {
+    "id": 27,
+    "name": "The Silence of the Lambs",
+    "year": 1991,
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Jonathan Demme",
+    "cast": [
+      "Jodie Foster",
+      "Anthony Hopkins",
+      "Scott Glenn"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 71,
+      "nominations": 76
+    },
+    "ratings": {
+      "IMDb": 8.6,
+      "Rotten Tomatoes": 96,
+      "Metacritic": 85
+    },
+    "box_office": "$272.7 million"
+  },
+  {
+    "id": 28,
+    "name": "Gladiator",
+    "year": 2000,
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Ridley Scott",
+    "cast": [
+      "Russell Crowe",
+      "Joaquin Phoenix",
+      "Connie Nielsen"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 82,
+      "nominations": 171
+    },
+    "ratings": {
+      "IMDb": 8.5,
+      "Rotten Tomatoes": 77,
+      "Metacritic": 67
+    },
+    "box_office": "$460.5 million"
+  },
+  {
+    "id": 29,
+    "name": "The Prestige",
+    "year": 2006,
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Hugh Jackman",
+      "Christian Bale",
+      "Scarlett Johansson"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 19,
+      "nominations": 51
+    },
+    "ratings": {
+      "IMDb": 8.5,
+      "Rotten Tomatoes": 76,
+      "Metacritic": 66
+    },
+    "box_office": "$109.7 million"
+  },
+  {
+    "id": 30,
+    "name": "The Green Mile",
+    "year": 1999,
+    "genre": [
+      "Crime",
+      "Drama",
+      "Fantasy"
+    ],
+    "director": "Frank Darabont",
+    "cast": [
+      "Tom Hanks",
+      "Michael Clarke Duncan",
+      "David Morse"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 17,
+      "nominations": 37
+    },
+    "ratings": {
+      "IMDb": 8.6,
+      "Rotten Tomatoes": 78,
+      "Metacritic": 61
+    },
+    "box_office": "$286.8 million"
+  },
+  {
+    "id": 31,
+    "name": "Se7en",
+    "year": 1995,
+    "genre": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "David Fincher",
+    "cast": [
+      "Morgan Freeman",
+      "Brad Pitt",
+      "Kevin Spacey"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 23,
+      "nominations": 38
+    },
+    "ratings": {
+      "IMDb": 8.6,
+      "Rotten Tomatoes": 81,
+      "Metacritic": 65
+    },
+    "box_office": "$327.3 million"
+  },
+  {
+    "id": 32,
+    "name": "Saving Private Ryan",
+    "year": 1998,
+    "genre": [
+      "Drama",
+      "War"
+    ],
+    "director": "Steven Spielberg",
+    "cast": [
+      "Tom Hanks",
+      "Matt Damon",
+      "Tom Sizemore"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 59,
+      "nominations": 80
+    },
+    "ratings": {
+      "IMDb": 8.6,
+      "Rotten Tomatoes": 93,
+      "Metacritic": 91
+    },
+    "box_office": "$482.3 million"
+  },
+  {
+    "id": 33,
+    "name": "The Matrix Revolutions",
+    "year": 2003,
+    "genre": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "director": [
+      "Lana Wachowski",
+      "Lilly Wachowski"
+    ],
+    "cast": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 36,
+      "nominations": 61
+    },
+    "ratings": {
+      "IMDb": 8.7,
+      "Rotten Tomatoes": 87,
+      "Metacritic": 74
+    },
+    "box_office": "$465.3 million"
+  },
+  {
+    "id": 35,
+    "name": "The Usual Suspects",
+    "year": 1995,
+    "genre": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Bryan Singer",
+    "cast": [
+      "Kevin Spacey",
+      "Gabriel Byrne",
+      "Chazz Palminteri"
+    ],
+    "language": "English",
+    "country": "United States",
+    "awards": {
+      "wins": 38,
+      "nominations": 26
+    },
+    "ratings": {
+      "IMDb": 8.5,
+      "Rotten Tomatoes": 89,
+      "Metacritic": 77
+    },
+    "box_office": "$34.4 million"
+  }
+]
+
+  
