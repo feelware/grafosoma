@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   justify-content: center;
   height: 100vh;
-  gap: 2rem;
+  gap: 50px;
 }
 
 .logo {
@@ -20,9 +20,19 @@
   margin: 0 auto;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
 .crearbutton {
   margin: 0 auto;
-  width: 100%;
   max-width: 200px;
-  margin-bottom: 2rem;
+}
+
+.input {
+  margin: 0 auto;
+  max-width: 200px;
 }
