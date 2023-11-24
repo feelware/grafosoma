@@ -2,8 +2,8 @@
 import GraphView from './components/GraphView/GraphView'
 import { useEffect, useState, useMemo } from 'react'
 import { useDisclosure } from '@mantine/hooks'
-import { Dialog, TextInput, Button } from '@mantine/core'
-import { FiSearch } from 'react-icons/fi';
+import { Dialog, TextInput, Button, CopyButton, Text } from '@mantine/core'
+import { FiSearch, FiShare, FiCheck } from 'react-icons/fi';
 import { TfiClose } from "react-icons/tfi";
 import genInitNodes from './processing/genInitNodes'
 import genLinks from './processing/genInitLinks'
@@ -16,7 +16,7 @@ const arraysEqual = (a, b) => {
   return true
 }
 
-export default function Container({ file }) {
+export default function Container({ file, id }) {
   const initNodes = useMemo(() => genInitNodes(file, 'name'), [])
   const initLinks = useMemo(() => genLinks(initNodes), [initNodes])
   const [data, setData] = useState({ 
@@ -177,6 +177,34 @@ export default function Container({ file }) {
           error={filterInputInvalid}
         />
       </Dialog>
+      <CopyButton value={id} timeout={2500} >
+        {({ copied, copy }) => (
+          <>
+            {
+              copied && <Text style={{
+                position: 'absolute',
+                bottom: '43px',
+                right: '95px',
+                overflow: 'visible'
+              }} size='13px' c="#C1C2C5">
+                Copied ID to clipboard!
+              </Text>
+            }
+            <Button 
+              style={{
+                position: 'absolute',
+                bottom: '33px',
+                right: '30px',
+                zIndex: 1000,
+                backgroundColor: '#303030',
+              }}
+              onClick={copy}
+            >
+              <FiShare/>
+            </Button>
+          </>
+        )}
+      </CopyButton>
       <GraphView data={data} file={file} />
     </div>
   )
