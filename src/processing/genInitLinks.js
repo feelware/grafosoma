@@ -38,7 +38,6 @@ const keyKeyLinker = ({ keyNodes }) => {
 }
 
 export default function genInitLinks({ primNodes, keyNodes }) {
-  // const maxNest = primNodes.map((prim) => prim.keys.length).reduce((a, b) => Math.max(a, b))
   return {
     rootKeysLinks: rootKeysLinker({ keyNodes }),
     primKeyLinks: primKeyLinker({ primNodes }),

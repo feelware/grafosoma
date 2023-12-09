@@ -1231,8 +1231,8 @@
         "Ciclismo"
       ],
       "pronouns": [
-        "ella",
-        "la"
+        "she",
+        "her"
       ],
       "preferences": {
         "food": [
@@ -1300,8 +1300,8 @@
         "Fotografía"
       ],
       "pronouns": [
-        "él",
-        "lo"
+        "he",
+        "him"
       ],
       "preferences": {
         "food": [
@@ -2104,7 +2104,7 @@
     },
     {
       "id": 30,
-      "name": "Isabella Cruz",
+      "name": "Isabshe Cruz",
       "age": 30,
       "physical_traits": {
         "physique": "Curvy",

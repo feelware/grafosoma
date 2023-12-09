@@ -24,18 +24,20 @@ const entityValue = (entity) => {
   return value
 }
 
+const setLum = (hsl, lum) => hsl.replace(/(\d+)%\)/, lum + '%)')
+const setSat = (hsl, sat) => hsl.replace(/(\d+)%/, sat + '%')
 
 export default function GraphView({ data, file }) {
   const forceGraph = useRef(null)
   const [state, setState] = useState(NO_INTERACTION)
   const findNode = (nodeId) => data.nodes.find((n) => n.id === nodeId)
-  const clickedNode = findNode(state.clicked)
-  const hoveredNode = findNode(state.hovered)
+  const clicked = findNode(state.clicked)
+  const hovered = findNode(state.hovered)
   const { height, width } = useViewportSize()
   const [decay, setDecay] = useState(INIT_DECAY)
   const [opened, { toggle, close }] = useDisclosure(false);
 
-  const clickedEntityObj = file.find((f) => f.name === clickedNode?.name)
+  const clickedEntityObj = file.find((f) => f.name === clicked?.name)
 
   /* Custom forces */
 
@@ -48,6 +50,9 @@ export default function GraphView({ data, file }) {
     forceGraph.current.d3Force('charge', forceManyBody()
       .strength(
         (node) => {
+          if (node.id[0] === 'k') {
+            return 0
+          }
           if (node.children) {
             return REPULSION / node.children.length
           }
@@ -70,11 +75,11 @@ export default function GraphView({ data, file }) {
           return REPULSION
         }
       ))
-    if (clickedNode) {
+    if (clicked) {
       forceGraph.current.d3ReheatSimulation()
       !opened && toggle()
     }
-    if (!clickedNode && opened) {
+    if (!clicked && opened) {
       close()
       forceGraph.current.d3ReheatSimulation()
     }
@@ -89,19 +94,19 @@ export default function GraphView({ data, file }) {
     })
   }
 
-  function handleNodeClick(clickedNode) {
-    if (clickedNode.relationships) {
+  function handleNodeClick(clicked) {
+    if (clicked.relationships) {
       if (decay[0] === INIT_DECAY[0] && decay[1] === INIT_DECAY[1]) {
         setDecay([0.05, 0.5])
       }
-      if (state.clicked === clickedNode.id) {
+      if (state.clicked === clicked.id) {
         setState(NO_INTERACTION)
         return  
       }
     }
     setState({
       hovered: state.hovered,
-      clicked: clickedNode.id
+      clicked: clicked.id
     })
   }
 
@@ -124,59 +129,96 @@ export default function GraphView({ data, file }) {
   /* Styling */
 
   const setNodeColor = (node) => {
-    const clickedNode = findNode(state.clicked)
-    const hoveredNode = findNode(state.hovered)
+    const color = node.color || '#C1C2C5'
+  
+    if (state.clicked) {
+    // there is a clicked node
 
-    if (state.clicked !== null) {
-      if (state.clicked === node.id) {
-        return node.color?.replace(/(\d+)%\)/, '75%)')
+      if (node.id === state.clicked) {
+        // clicked node is current node
+        return setLum(color, 75)
       }
-      if (clickedNode?.relationships) {
-        if (clickedNode.relationships.map((r) => r.id).includes(state.hovered)) {
-          if (clickedNode.primitives.includes(node.id) && hoveredNode.primitives.includes(node.id)) {
-            return node.color?.replace(/(\d+)%\)/, '75%)')
+      
+      if (clicked?.relationships) {
+        // clicked node is entity
+        if (clicked.relationships.map((r) => r.id).includes(state.hovered)) {
+          // clicked node is related to current node
+          if (
+            clicked.primitives.includes(node.id) 
+            && hovered.primitives.includes(node.id)
+          ) {
+            // current node belongs to the intersection
+            // of clicked node's primitives
+            // and hovered node's primitives
+            return setLum(color, 75)
           }
         }
-        else if (clickedNode.primitives.includes(node.id)) {
-          return node.color?.replace(/(\d+)%\)/, '60%)') 
+        else if (clicked.primitives.includes(node.id)) {
+          // current node is a
+          // clicked entity's primitive
+          return setLum(color, 60)
         }
       }
-      if (clickedNode?.entities) {
-        if (hoveredNode?.entities && state.hovered !== state.clicked) {
-          if (clickedNode.entities.includes(node.id) && hoveredNode.entities.includes(node.id)) {
-            return node.color?.replace(/(\d+)%\)/, '75%)')
+  
+      if (clicked?.entities) {
+        // clicked node is primitive
+
+        if (hovered?.entities) {
+          // hovered node is also primitive
+          if (
+            clicked.entities.includes(node.id) 
+            && hovered.entities.includes(node.id)
+          ) {
+            // current node belongs to the intersection
+            // of clicked node's entities
+            // and hovered node's entities
+            return setLum(color, 75)
           }
         }
-        else if (clickedNode.entities.includes(node.id)) {
-          return node.color?.replace(/(\d+)%\)/, '75%)')
+
+        else if (clicked.entities.includes(node.id)) {
+          // current node is a
+          // clicked primitive's entity
+          return setLum(color, 75)
         }
       }
+  
+      // generic case for primitives
       if (node.entities) {
-        return node.color?.replace(/(\d+)%\)/, '25%)').replace(/(\d+)%/, '35%')
+        return setSat(setLum(color, 25), 35)
       }
-      return node.color?.replace(/(\d+)%\)/, '25%)')
-    } else {
-      if (state.hovered === node.id) {
-        return node.color?.replace(/(\d+)%\)/, '75%)')
-      }
-      if (hoveredNode?.entities?.includes(node.id)) {
-        return node.color?.replace(/(\d+)%\)/, '75%)')
-      }
-      if (hoveredNode?.primitives?.includes(node.id)) {
-        return node.color?.replace(/(\d+)%\)/, '75%)')
-      }
+      
+      // generic case
+      return setLum(color, 25)
     }
+
+    // There is no clicked node
+    
+    else if (
+      node.id === state.hovered
+      || hovered?.entities?.includes(node.id)
+      || hovered?.primitives?.includes(node.id)
+    ) {
+      // current node is hovered
+      // or is related to hovered node
+      return setLum(color, 75)
+    }
+  
+    // generic case
     return node.color
   }
 
   const setNodeVal = (node) => {
     if (node.id[0] === 'k') {
-      return 0.25
+      return node.children.length * NODE_REL_SIZE * 0.01
     }
+
     if (node.entities) {
       return node.entities.length + 1
     }
+
     const clickedRels = findNode(state.clicked)?.relationships
+
     if (clickedRels) {
       if (state.clicked === node.id) {
         return NODE_REL_SIZE * entityValue(node) * 0.5
@@ -185,14 +227,12 @@ export default function GraphView({ data, file }) {
         return NODE_REL_SIZE * clickedRels.find((r) => r.id === node.id)?.sharedAttributes.length * 0.5
       }
     }
+
     if (node.relationships) {
       return NODE_REL_SIZE * entityValue(node) * 0.05
     }
-    return 10
-  }
 
-  const setLinkColor = (link) => {
-    return link.color || '#353535'
+    return 10
   }
 
   useEffect(() => {
@@ -200,13 +240,12 @@ export default function GraphView({ data, file }) {
       forceGraph.current.zoomToFit(0, height / 10)
     }, 1)
   }, [height, width])
-
   
   return (
     <>
       <Dialog
         styles={{ root: { 
-          border: clickedNode ? '1px solid #303030' : 'none',
+          border: clicked ? '1px solid #303030' : 'none',
           backgroundColor: '#272727',
           maxHeight: '75vh',
         }}}
@@ -216,9 +255,8 @@ export default function GraphView({ data, file }) {
         position={{ top: 40, left: 30 }}
       >
       {
-        clickedNode?.entities && // it's a primitive
+        clicked?.entities && // it's a primitive
         <>
-          
         <Scrollbars autoHide autoHeight autoHeightMax={'50vh'} renderThumbVertical={() => <div style={{ backgroundColor: '#303030', borderRadius: '20px' }} className="thumb-vertical"/>}>
           <div style={{
           display: 'flex',
@@ -235,20 +273,20 @@ export default function GraphView({ data, file }) {
           gap: '10px',
         }}>
           <div>
-            <Code color='#242424' c={clickedNode.color.replace(/(\d+)%\)/, '60%)')}>
+            <Code color='#242424' c={clicked.color.replace(/(\d+)%\)/, '60%)')}>
               {findNode(state.clicked).keys.join(' · ') + ":"}
             </Code>
-            <Code color='#242424' c={clickedNode.color.replace(/(\d+)%\)/, '75%)')}>
+            <Code color='#242424' c={clicked.color.replace(/(\d+)%\)/, '75%)')}>
               {findNode(state.clicked).actualName}
             </Code>
           </div>
           <div>
           {
-            clickedNode.entities.map((e, index) => 
+            clicked.entities.map((e, index) => 
               <div key={index}>
                 <Code color='#242424' c={
-                  hoveredNode?.entities?.includes(e) ? 
-                    hoveredNode.color.replace(/(\d+)%\)/, '65%)') 
+                  hovered?.entities?.includes(e) ? 
+                    hovered.color.replace(/(\d+)%\)/, '65%)') 
                     : '#C1C2C5' 
                 } >
                   {findNode(e).name}
@@ -261,8 +299,8 @@ export default function GraphView({ data, file }) {
         </Scrollbars>
           <div style={{ paddingTop: "15px"}}>
           <Button fullWidth onClick={() => {
-            const blob = new Blob([JSON.stringify(clickedNode.entities.map((e) => findNode(e).name), null, 3)], { type: "text/plain;charset=utf-8" });
-            saveAs(blob, clickedNode.keys.join('.') + "=" + clickedNode.actualName + ".json");
+            const blob = new Blob([JSON.stringify(clicked.entities.map((e) => findNode(e).name), null, 3)], { type: "text/plain;charset=utf-8" });
+            saveAs(blob, clicked.keys.join('.') + "=" + clicked.actualName + ".json");
           }} color="#303030" >
             <Text size='15px' c="#C1C2C5">
               Save as file
@@ -272,7 +310,7 @@ export default function GraphView({ data, file }) {
           </>
       }
       {
-        clickedNode?.primitives && // it's an entity
+        clicked?.primitives && // it's an entity
         <>
           <Tabs color="#606060" defaultValue="entity">
             <Tabs.List grow style={{ marginBottom: "20px"}} >
@@ -318,7 +356,7 @@ export default function GraphView({ data, file }) {
               }}>
               { 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                  {clickedNode.relationships.sort((a, b) => b.sharedAttributes.length - a.sharedAttributes.length).map((r, index) => {
+                  {clicked.relationships.sort((a, b) => b.sharedAttributes.length - a.sharedAttributes.length).map((r, index) => {
                     return (
                       <div key={index} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                         <Code color='#242424'>
@@ -348,7 +386,7 @@ export default function GraphView({ data, file }) {
             const blob = new Blob([
               JSON.stringify({
                 entity: clickedEntityObj,
-                relationships: clickedNode.relationships.map((r) => {
+                relationships: clicked.relationships.map((r) => {
                   return {
                     name: r.name,
                     sharedAttributes: r.sharedAttributes.map((s) => s.name)
@@ -356,7 +394,7 @@ export default function GraphView({ data, file }) {
                 })
               }, null, 3)
             ], { type: "text/plain;charset=utf-8" });
-            saveAs(blob, clickedNode.name + ".json");
+            saveAs(blob, clicked.name + ".json");
           }} color="#303030" >
             <Text size='15px' c="#C1C2C5">
               Save as file
@@ -367,27 +405,30 @@ export default function GraphView({ data, file }) {
       }
       </Dialog>
       <ForceGraph2D
+        graphData={data}
         ref={forceGraph}
-        width={width}
-        height={height}
-        graphData={data} 
-        autoPauseRedraw={true}
-        linkCurvature={'curvature'}
+        // Interaction
         onNodeHover={handleNodeHover}
         onNodeDrag={handleNodeHover}
         onNodeDragEnd={handleNodeDragEnd}
         onNodeClick={handleNodeClick}
         onBackgroundClick={handleBackgroundClick}
         onLinkClick={handleBackgroundClick}
-        backgroundColor={'#ffffff0'}
+        // Styling
+        width={width}
+        height={height}
+        nodeVal={setNodeVal}
         nodeRelSize={NODE_REL_SIZE}
         nodeColor={setNodeColor} 
-        linkColor={setLinkColor}
-        nodeVal={setNodeVal}
         nodeVisibility={(node) => node.visible !== false}
         linkVisibility={(link) => link.visible !== false}
+        linkColor={() => '#353535'}
+        backgroundColor='#ffffff0'
+        // Forces
         d3AlphaDecay={decay[0]}
         d3VelocityDecay={decay[1]}
+        // Performance
+        autoPauseRedraw={true}
       />
     </>
   )

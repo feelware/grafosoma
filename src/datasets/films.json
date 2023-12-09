@@ -111,34 +111,6 @@
     "box_office": "$1.03 billion"
   },
   {
-    "id": 8,
-    "name": "The Dark Knight",
-    "year": 2008,
-    "genre": [
-      "Action",
-      "Crime",
-      "Drama"
-    ],
-    "director": "Christopher Nolan",
-    "cast": [
-      "Christian Bale",
-      "Heath Ledger",
-      "Aaron Eckhart"
-    ],
-    "language": "English",
-    "country": "United States",
-    "awards": {
-      "wins": 132,
-      "nominations": 185
-    },
-    "ratings": {
-      "IMDb": 9.0,
-      "Rotten Tomatoes": 94,
-      "Metacritic": 84
-    },
-    "box_office": "$1.005 billion"
-  },
-  {
     "id": 9,
     "name": "Titanic",
     "year": 1997,

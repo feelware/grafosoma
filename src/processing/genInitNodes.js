@@ -10,89 +10,123 @@ function calcName(keys, value) {
 
 function traverseObject(keys, value, entityId) {
   let keyId
-  const existingKey = keyNodes.find((node) => arraysEqual(node.keys, keys))
+  
+  // Presunta clave existente
+  const existingKey = keyNodes.find((k) => arraysEqual(k.keys, keys))
+
   if (existingKey) {
-    keyId = existingKey.id  
-  } else if (keys.length > 0) {
+    // Recuperar ID existente
+    keyId = existingKey.id
+  } 
+  
+  else if (keys.length > 0) {
+    // Generar ID incremental
     keyId = 'k' + keyNodes.length.toString()
+
+    // Generar nuevo nodo clave
     let keyNode = {
       id: keyId,
-      name: keys[keys.length - 1],
-      keys: keys,
-      parent: null,
-      children: [],
-      entities: [],
-      fx: null,
-      fy: null,
+      name: keys[keys.length - 1], // Ultima clave de la rama
+      keys: keys,   // Toda la rama
+      parent: null, // ID de nodo padre
+      children: [], // IDs de nodos hijos
     }
-    // link it to its parent key
+
     if (keys.length > 0) {
-      const parentKey = keyNodes.find((node) => arraysEqual(node.keys, keys.slice(0, -1)))
+      // Comprobar si tiene nodo clave padre
+      const parentKey = keyNodes.find((k) => arraysEqual(k.keys, keys.slice(0, -1)))
+      
       if (parentKey) {
-        // add reference to parent in child
+        // Agregar referencia del padre al hijo
         keyNode.parent = parentKey.id
-        // add reference to child in parent
-        parentKey.children = parentKey.children ? parentKey.children.concat(keyId) : [keyId]
+
+        // Agregar referencia del hijo al padre
+        parentKey.children = parentKey.children?.concat(keyId) || [keyId]
       }
     }
+
+    // Almacenar nodo clave
     keyNodes.push(keyNode)
   }
-  /* Value type check */
+  
+  /* Verificación del tipo de valor */
+  // Comprobar si el valor es primitivo
   if (
     typeof value === 'string' || 
     typeof value === 'number' || 
     typeof value === 'boolean' || 
     value === null
-    ) {
-    /* Primitive */
+  ){
     let id
+    
+    // Presunto primitivo existente
+    const existing = primNodes.find((p) => 
+      p.name === calcName(keys, value)
+      && arraysEqual(p.keys, keys)
+    )
 
-    const existing = primNodes.find((node) => node.name === calcName(keys, value) && arraysEqual(node.keys, keys))
     if (existing) {
+      // Recuperar ID existente
       id = existing.id
-      // add reference to entity in primitive
+
+      // Agregar referencia de entidad a primitivo
       existing.entities = existing.entities.concat(entityId)
-    } 
+    }
+
     else {
+      // Generar ID incremental
       id = 'p' + primNodes.length.toString()
+
+      // Generar nuevo nodo primitivo
       let primNode = {
         id: id,
-        name: calcName(keys, value),
-        actualName: value,
-        keys: keys,
-        parent: keyId,
-        entities: [],
+        name: calcName(keys, value),  // Nombre a mostrar en el tooltip
+        actualName: value,     // Valor del primitivo
+        keys: keys,            // Rama que lleva a nodo primitivo
+        parent: keyId,         // ID de nodo padre
+        entities: [entityId],  // IDs de entidades que comparten primitivo
       }
-      // add reference to primitive children in parent
-      const key = keyNodes.find((node) => node.id === keyId)
-      key.children = key.children ? key.children.concat(id) : [id]
-      // add reference to entity in primitive
-      primNode.entities = [entityId]
+
+      // Recuperar nodo clave padre
+      const key = keyNodes.find((k) => k.id === keyId)
+
+      // Agregar ID de primitivo a conjunto de hijos del padre
+      key.children = key.children?.concat(id) || [id]
+
+      // Almacenar nodo primitivo
       primNodes.push(primNode)
     }
-    // add reference to primitive in entity
-    entityNodes.find((node) => node.id === entityId).primitives.push(id)
+
+    // Agregar ID de primitivo a conjunto de primitivos de entidad
+    entityNodes.find((e) => e.id === entityId).primitives.push(id)
+
+    // Retornar rama (backtracking)
     return [[keys, value, entityId]]
   }
-  let branch = []
+  
+  let branches = []
+  
   if (Array.isArray(value)) {
-    /* Array */
+    /* Arreglo */
+    // Si el valor es un arreglo, recorre cada elemento del arreglo
     for (const [, item] of value.entries()) {
-      branch.push(...traverseObject(keys, item, entityId))
+      branches.push(...traverseObject(keys, item, entityId)) // Llamada recursiva para cada elemento
     }
-    return branch
+    return branches // Retorna las ramas
   }
-  /* Object */
+  
+  // Si el valor es un objeto, recorre cada par clave-valor en el objeto
   for (const [childKey, childValue] of Object.entries(value)) {
-    const childKeys = keys ?
+    const childKeys = keys ? 
       (Array.isArray(keys) ? keys.concat(childKey) : [keys].concat(childKey)) 
     : [childKey]
-    branch.push(...traverseObject(childKeys, childValue, entityId))
+    branches.push(...traverseObject(childKeys, childValue, entityId)) // Llamada recursiva para cada par clave-valor
   }
-  return branch
+  return branches // Retorna las ramas
 }
 
 export default function genInitNodes(dataset, nameAttrib) {
+  // Reinicio de los arreglos para almacenar nodos
   entityNodes = []
   primNodes = []
   keyNodes = [{
@@ -108,6 +142,8 @@ export default function genInitNodes(dataset, nameAttrib) {
     fy: 0,
   }]
   
+  /* Procesamiento recursivo */
+
   dataset.forEach((entity) => {
     const entityId = 'e' + entityNodes.length.toString()
     entityNodes.push({
@@ -121,18 +157,26 @@ export default function genInitNodes(dataset, nameAttrib) {
     traverseObject([], entity, entityId)
   })
 
-  const maxNest = primNodes.map((prim) => prim.keys.length).reduce((a, b) => Math.max(a, b))
+  console.log('entityNodes: ', entityNodes)
+  console.log('primNodes: ', primNodes)
+  console.log('keynodes: ', keyNodes)
+
+  /* Procesamiento post-recursivo */
+
+  // Cálculo de la máxima profundidad de los nodos primitivos
+  const maxNest = primNodes.map((p) => p.keys.length).reduce((a, b) => Math.max(a, b))
+
+  // Asignación de colores a las claves principales y sus descendientes
   let i = 1
   while (i < maxNest + 1) {
     const keyNest = keyNodes.filter((keyNode) => keyNode.keys.length === i)
     if (i === 1) {
-      keyNest.forEach((mainKey, index) =>
-        {
-          mainKey.color = `hsl(${360 / keyNest.length * index}, 20%, 25%)`
-        }
-      )
-    }
-    else {
+      // Asignación de colores a las claves principales
+      keyNest.forEach((mainKey, index) => {
+        mainKey.color = `hsl(${360 / keyNest.length * index}, 20%, 25%)`
+      })
+    } else {
+      // Propagación de colores desde las claves padre a sus hijos
       keyNest.forEach((keyNode) => {
         const parentKey = keyNodes.find((node) => node.id === keyNode.parent)
         keyNode.color = parentKey.color
@@ -141,35 +185,54 @@ export default function genInitNodes(dataset, nameAttrib) {
     i++
   }
 
+  // Asignación de colores a los nodos primitivos basados en sus claves padre
   primNodes.forEach((primNode) => {
     const parentKey = keyNodes.find((node) => node.id === primNode.parent)
     const hue = parentKey.color.match(/\d+/)[0]
     primNode.color = `hsl(${hue}, 50%, 50%)`
   })
 
-  entityNodes.forEach((entityNode) => {
-    entityNode.primitives.forEach((primitiveId) => {
-      const primitive = primNodes.find((n) => n.id === primitiveId)
-      primitive.entities.filter((e) => e !== entityNode.id).forEach((relativeId) => {
-        entityNode.relationships.find((r) => r.id === relativeId)?.sharedAttributes.push({
-          id: primitiveId,
-          name: primitive.name,
-          color: primitive.color,
-        }) ||
-        entityNode.relationships.push({
-          id: relativeId,
-          name: entityNodes.find((node) => node.id === relativeId).name,
-          sharedAttributes: [{
-            id: primitiveId,
-            name: primitive.name,
-            color: primitive.color,
-          }],
-        })
-        entityNode.value += 1
+  // Iterar sobre cada primitivo de cada entidad
+  entityNodes.forEach((entity) => {
+    entity.primitives.forEach((primId) => {
+
+      // Buscar primitivo actual por ID
+      const prim = primNodes.find((p) => p.id === primId)
+      
+      // Buscar IDs de entidades que comparten primitivo actual
+      const relatives = prim.entities.filter((e) => e !== entity.id)
+      
+      relatives.forEach((relId) => {
+        // Presunta relación existente
+        const existingRel = entity.relationships.find((r) => r.id === relId)
+        
+        if (existingRel) {
+          existingRel.sharedAttributes.push({
+            id: primId,
+            name: prim.name,
+            color: prim.color,
+          })
+        }
+
+        else {
+          entity.relationships.push({
+            id: relId,
+            name: entityNodes.find((node) => node.id === relId).name,
+            sharedAttributes: [{
+              id: primId,
+              name: prim.name,
+              color: prim.color,
+            }],
+          })
+        }
+
+        // Incrementar el valor de la entidad actual por cada relación
+        entity.value += 1
       })
     })
   })
 
+  // Retorna todos los nodos
   return {
     entityNodes,
     primNodes,

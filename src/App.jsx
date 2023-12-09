@@ -1,5 +1,10 @@
-import { useEffect, useState } from 'react';
-import { FileButton, Button, Text, TextInput } from '@mantine/core';
+import { useCallback, useEffect, useState } from 'react';
+import { FileButton, Button, Text } from '@mantine/core';
+import { useDropzone } from 'react-dropzone';
+import { BsFillPeopleFill } from "react-icons/bs";
+import { PiPopcornFill } from "react-icons/pi";
+import customers from './datasets/customers.json';
+import films from './datasets/films.json';
 import Container from './Container';
 import grafosomaIcon from './assets/grafosoma.svg'
 
@@ -8,65 +13,56 @@ import styles from './App.module.css';
 export default function App() {
   const [file, setFile] = useState(null)
   const [fileContent, setFileContent] = useState(null)
-  const [id, setId] = useState(null)
+
+  const onDrop = useCallback((acceptedFiles) => {
+    setFile(acceptedFiles[0])
+  }, [])
   
+  const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
+
   useEffect(() => {
     const reader = new FileReader()
     file && reader.readAsText(file)
     reader.addEventListener(
       "load",
-      () => {
-        const date = Date.now()
-        fetch("https://livehouses.paoloose.site/api/session?id=" + date, {
-          method: "POST",
-          body: reader.result,
-        });
-        setId(date)
-        setFileContent(JSON.parse(reader.result))
-      },
+      () => { setFileContent(JSON.parse(reader.result)) },
       false,
     );
   }, [file])
-
-  const fetchData = async () => {
-    const response = await fetch(`https://livehouses.paoloose.site/api/session?id=${id}`);
-    const data = await response.json();
-    setFileContent(data);
-  };
 
   return (
     <>
     {
       fileContent ?
-      <Container file={fileContent} id={id} />
+      <Container file={fileContent} />
       : 
-      <div className={styles.container}>
-        <img src={grafosomaIcon} alt="Grafosoma" className={styles.logo} />
-        <div className={styles.menu}> 
-          <TextInput 
-            label="Enter existing project ID"
-            className={styles.input}
-            value={id}
-            onChange={(e) => setId(e.currentTarget.value)}
-          />  
-          {
-            !id ? 
+      <div className={styles.main}>
+        <div className={styles.container}>
+          <img src={grafosomaIcon} alt="Grafosoma" className={styles.logo} />
+          <div className={styles.menu}>
             <FileButton onChange={setFile} accept=".json">
               {(props) => <Button fullWidth className={styles.crearbutton} {...props} color="#303030" >
                 <Text size='15px' c="#C1C2C5">
-                  Or create a new one!
+                  Choose JSON file
                 </Text>  
               </Button>}
             </FileButton>
-            :
-            <Button fullWidth className={styles.crearbutton} onClick={fetchData} color="#303030" >
+            <div className={styles.examples}>
               <Text size='15px' c="#C1C2C5">
-                Join
-              </Text>  
-            </Button>
-          }
-        </div>
-      </div>  
+                Or use a sample dataset
+              </Text>
+              <div className={styles.exbuttons}>
+                <Button color="#303030" fullWidth onClick={() => setFileContent(customers)}>
+                  <BsFillPeopleFill />
+                </Button>
+                <Button color="#303030" fullWidth onClick={() => setFileContent(films)}>
+                  <PiPopcornFill />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
     }
     </>
   )
